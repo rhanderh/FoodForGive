@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
@@ -20,6 +21,10 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+#Heroku Config
+gem 'rails_12factor', group: :production
+
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -43,3 +48,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+#Ruby version
+ruby "1.9.3"
