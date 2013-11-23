@@ -37,29 +37,31 @@ class ConfessionsController < ApplicationController
     end
   end
 
+
   # PATCH/PUT /confessions/1
   # PATCH/PUT /confessions/1.json
-  def update
-    respond_to do |format|
-      if @confession.update(confession_params)
-        format.html { redirect_to @confession, notice: 'Confession was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @confession.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+
+ # def update
+  #  respond_to do |format|
+   #   if @confession.update(confession_params)
+    #    format.html { redirect_to @confession, notice: 'Confession was successfully updated.' }
+     #   format.json { head :no_content }
+      #else
+       # format.html { render action: 'edit' }
+        #format.json { render json: @confession.errors, status: :unprocessable_entity }
+     # end
+    #end
+  #end
 
   # DELETE /confessions/1
   # DELETE /confessions/1.json
-  def destroy
-    @confession.destroy
-    respond_to do |format|
-      format.html { redirect_to confessions_url }
-      format.json { head :no_content }
-    end
-  end
+ # def destroy
+   # @confession.destroy
+  #  respond_to do |format|
+    #  format.html { redirect_to confessions_url }
+     # format.json { head :no_content }
+   # end
+ # end
 
   private
     # Use callbacks to share common setup or constraints between actions.

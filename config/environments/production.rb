@@ -1,5 +1,18 @@
 FoodForGive::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  #Mailer Settings
+  config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+address:'smtp.mandrillapp.com',
+port:587,
+username:ENV['MANDRILL_USERNAME'],
+password:ENV['MANDRILL_APIKEY'],
+domain:'heroku.com',
+authentication: :plain
+}
+config.action_mailer.default_url_options = {
+  :host => 'http://afternoon-cove-7053.herokuapp.com'
+}
 
   # Code is not reloaded between requests.
   config.cache_classes = true
