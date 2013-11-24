@@ -1,6 +1,6 @@
 class PaymentsController < ApplicationController
   before_action :set_payment, only: [:show, :edit, :update, :destroy]
-
+  respond_to :html, :js, :json
   # GET /payments
   # GET /payments.json
   def index
@@ -28,11 +28,12 @@ class PaymentsController < ApplicationController
 
     respond_to do |format|
       if @payment.save
+        format.js
         format.html { redirect_to @payment, notice: 'Payment was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @payment }
+       # format.json { render action: 'show', status: :created, location: @payment }
       else
         format.html { render action: 'new' }
-        format.json { render json: @payment.errors, status: :unprocessable_entity }
+       # format.json { render json: @payment.errors, status: :unprocessable_entity }
       end
     end
   end

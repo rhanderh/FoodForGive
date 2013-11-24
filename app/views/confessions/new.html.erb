@@ -1,7 +1,21 @@
 <h1>Food ForGive</h1>
 
-<%= render 'form' %>
+<p id="notice"><%= notice %></p>
+  <div id="magic_form">
+  	
+  <%= render 'form' %>
+  	
 
+  </div>
+  
+  <div id="magic-reponse">
+  </div>
+	
 <%=render '/payments/form', :@payment => Payment.new %>
 
+<div id="payment-response">
+	</div>
+	
 <%= link_to 'Back', confessions_path %>
+
+

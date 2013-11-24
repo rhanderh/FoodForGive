@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#jsroutes for handling routes in javascript
+gem 'js-routes'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'

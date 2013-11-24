@@ -1,5 +1,9 @@
 class ConfessionsController < ApplicationController
   before_action :set_confession, only: [:show, :edit, :update, :destroy]
+  respond_to :html, :js, :json
+  
+  # you can disable csrf protection on controller-by-controller basis:
+  #skip_before_filter :verify_authenticity_token
 
   # GET /confessions
   # GET /confessions.json
@@ -28,11 +32,12 @@ class ConfessionsController < ApplicationController
 
     respond_to do |format|
       if @confession.save
-        format.html { redirect_to @confession, notice: 'Confession was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @confession }
+        format.js 
+        format.html {render :partial => 'show_confession', :content_type => 'text/html', notice: 'Thank you for sharing!  Now absolve yourself and feel better by helping someone else.' }
+       # format.json { render json: @confession.to_json, status: :created }
       else
-        format.html { render action: 'new' }
-        format.json { render json: @confession.errors, status: :unprocessable_entity }
+        format.html { render action: 'new', notice: 'Thank you for sharing!  We could not save your reponse right now, but absolve yourself and feel better by helping someone else.' }
+        #format.json { render json: @confession.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -55,13 +60,13 @@ class ConfessionsController < ApplicationController
 
   # DELETE /confessions/1
   # DELETE /confessions/1.json
- # def destroy
-   # @confession.destroy
-  #  respond_to do |format|
-    #  format.html { redirect_to confessions_url }
-     # format.json { head :no_content }
-   # end
- # end
+  def destroy
+    @confession.destroy
+   respond_to do |format|
+      format.html { redirect_to confessions_url }
+      format.json { head :no_content }
+    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
