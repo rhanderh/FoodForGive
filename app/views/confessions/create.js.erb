@@ -21,16 +21,13 @@ responses[18] = "Very doubtful";
 responses[19] = "My sources say no";
 
 
-$('#confess_submit').bind('ajax:success', function(){
+
 $('#magic-response').html("<%= escape_javascript(render(:partial => 'confessions/show_confession')).html_safe %>");
 $('#magic-response').append(responses[Math.floor(Math.random()*responses.length)]);
-});
 
-$(document).ready(function(){
-$('#magic-response').bind('ajax:aborted:required', function(){
-$('#magic-response').append("<p>There was a failure</p>");
-});
-});
+
+
+
 
 
 

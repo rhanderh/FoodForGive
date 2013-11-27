@@ -1,7 +1,7 @@
 class ConfessionsController < ApplicationController
   before_action :set_confession, only: [:show, :edit, :update, :destroy]
   respond_to :html, :js, :json
-  
+ 
   # you can disable csrf protection on controller-by-controller basis:
   #skip_before_filter :verify_authenticity_token
 
@@ -80,3 +80,4 @@ class ConfessionsController < ApplicationController
       params.require(:confession).permit(:confession_text)
     end
 end
+
