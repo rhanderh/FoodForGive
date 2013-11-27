@@ -36,6 +36,7 @@ class ConfessionsController < ApplicationController
         format.html {render :partial => 'show_confession', :content_type => 'text/html', notice: 'Thank you for sharing!  Now absolve yourself and feel better by helping someone else.' }
        # format.json { render json: @confession.to_json, status: :created }
       else
+        format.js 
         format.html { render action: 'new', notice: 'Thank you for sharing!  We could not save your reponse right now, but absolve yourself and feel better by helping someone else.' }
         #format.json { render json: @confession.errors, status: :unprocessable_entity }
       end

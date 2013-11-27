@@ -1,1 +1,36 @@
+var responses = new Array();
+responses[0] = "It is certain";
+responses[1] = "It is decidedly so";
+responses[2] = "Without a doubt";
+responses[3] = "Yes definitely";
+responses[4] = "You may rely on it";
+responses[5] = "As I see it yes";
+responses[6] = "Most likely";
+responses[7] = "Outlook good";
+responses[8] = "Yes";
+responses[9] = "Signs point to yes";
+responses[10] = "Reply hazy try again";
+responses[11] = "Ask again later";
+responses[12] = "Better not tell you now";
+responses[13] = "Cannot predict now";
+responses[14] = "Concentrate and ask again";
+responses[15] = "Don't count on it";
+responses[16] = "My reply is no";
+responses[17] = "Outlook not so good";
+responses[18] = "Very doubtful";
+responses[19] = "My sources say no";
+
+
+$('#confess_submit').bind('ajax:success', function(){
 $('#magic-response').html("<%= escape_javascript(render(:partial => 'confessions/show_confession')).html_safe %>");
+$('#magic-response').append(responses[Math.floor(Math.random()*responses.length)]);
+});
+
+$(document).ready(function(){
+$('#magic-response').bind('ajax:aborted:required', function(){
+$('#magic-response').append("<p>There was a failure</p>");
+});
+});
+
+
+
