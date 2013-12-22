@@ -1,3 +1,7 @@
+if($('#confess_text_field').val() ==  "") {
+   $('#magic-response').html("<p>Please enter at least one thing!</p>");
+   }
+else{
 var responses = new Array();
 responses[0] = "It is certain";
 responses[1] = "It is decidedly so";
@@ -24,6 +28,7 @@ responses[19] = "My sources say no";
 
 $('#magic-response').html("<%= escape_javascript(render(:partial => 'confessions/show_confession')).html_safe %>");
 $('#magic-response').append(responses[Math.floor(Math.random()*responses.length)]);
+}
 
 
 
