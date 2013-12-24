@@ -432,7 +432,7 @@
 	filter: alpha(opacity=9);
 	position: relative;
 	margin-right: -10000px;
-	margin-top: 403px;
+	margin-top: 0px;
 	left: 428px;
 }
 
@@ -457,10 +457,58 @@
 	left: 428px;
 }
 
+#confess_text_field
+{
+	z-index: 94;
+	width: 239px;
+	height: 23px;
+	border:1px solid black;
+	position: relative;
+	width: 100%;
+	left:2em;
+}
+
+#confess_submit
+{
+	position: relative;
+	left:2em;
+	color:#662D91;
+	background-color:#F5A2C9;
+	border:0.2em solid #F5A2C9;
+	-moz-border-radius: 15px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.2em;
+    -pie-box-shadow: none;
+	-moz-box-shadow: 0px 0px 80px rgba(127, 127, 127, 0.53);
+	-webkit-box-shadow: 0px 0px 80px -1px rgba(127, 127, 127, 0.53);
+	box-shadow: 0px 0px 80px rgba(127, 127, 127, 0.53);
+	z-index 20000;
+}
+
+#confess_submit:hover
+{
+	position: relative;
+	left:2em;
+	color:#FFFFFF;
+	background-color:#F5A2C9;
+	border:0.2em solid #F5A2C9;
+	-moz-border-radius: 15px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.2em
+}
+
+#magic-response
+{
+	position: relative;
+	left:2em;
+}
+
 #u1808-6:hover
 {
 	background-color: transparent;
-	opacity: 0.11;
+	opacity: 0.85;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=11)";
 	filter: alpha(opacity=11);
 	padding-top: 0px;

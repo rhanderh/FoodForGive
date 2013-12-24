@@ -1,5 +1,6 @@
 
 
+
   <div class="clearfix" id="page"><!-- column -->
    <div class="position_content" id="page_position_content">
     <div class="clearfix colelem" id="pu2918"><!-- group -->
@@ -47,18 +48,49 @@
      <img class="grpelem" id="u3200" src="/assets/twitter2-u3200.png" alt="" width="54" height="61"/><!-- rasterized frame -->
      <img class="grpelem" id="u3173" src="/assets/facebook-u3173.png" alt="" width="54" height="61"/><!-- rasterized frame -->
      <img class="grpelem" id="u3398" src="/assets/google-logo-u3398.png" alt="" width="58" height="65"/><!-- rasterized frame -->
-     <div class="clip_frame clearfix grpelem" id="u3743"><!-- image -->
-      <div id="u3743_clip">
-       <img class="position_content" id="u3743_img" src="/assets/pink%20button.png" alt="" width="80" height="21"/>
-      </div>
-     </div>
-     <div class="clearfix grpelem" id="u3568-4"><!-- content -->
-      <p>ENTER</p>
-     </div>
-     <div class="grpelem" id="u3761"><!-- simple frame --></div>
-     <div class="clearfix grpelem" id="u1808-6"><!-- content -->
-      <p>Please type food con<span id="u1808-2">f</span>ession.</p>
-     </div>
+    	<div class="clip_frame clearfix grpelem" id="u3743"><!-- image -->	    </div>
+       
+        <div class="clearfix grpelem" id="u3568-4"><!-- content ---TIES TO HEADER/TITLE -->  </div>
+	    <div class="grpelem" id="u3761"><!-- simple frame --></div>
+	   
+	     
+	    <%= form_for(@confession, remote: true) do |f| %>
+ 	 	<% if @confession.errors.any? %>
+   	 	<div id="error_explanation">
+      	<h2><%= pluralize(@confession.errors.count, "error") %> - Sorry!  This made the confession not record.  The Food ForGive team will be right on it, so come back soon!</h2>
+
+     	 <ul>
+      	<% @confession.errors.full_messages.each do |msg| %>
+      	  <li><%= msg %></li>
+      	<% end %>
+     	 </ul>
+    	</div>
+  		<% end %>
+  		
+	     
+	   
+	     <div class="clearfix grpelem" id="u1808-6"><!-- content -->
+	      
+	     <div class="field"> <%= f.text_field :confession_text, :id => "confess_text_field"  %> </div>
+	     <br>
+          <div class="actions", id="submit_confession">
+	           <%= f.submit "Forgive Yourself", :id => "confess_submit" %>
+	       </div>
+	       
+	          <br>
+	       <div id="magic-response"></div>
+	       
+	     </div>
+	     	      	
+	     <!-- <div id="u3743_clip">
+	      <div class="actions", id="submit_confession">
+	           <%= f.submit "Forgive Yourself", :id => "confess_submit" %>
+	       </div>
+	       <img class="position_content" id="u3743_img" src="/assets/pink%20button.png" alt="" width="80" height="21"/>	       
+	     </div>-->
+       
+     <% end %>
+     
      <div class="clip_frame grpelem" id="u1748"><!-- image -->
       <img class="block" id="u1748_img" src="/assets/topornament.jpg" alt="" width="215" height="23"/>
      </div>
@@ -147,9 +179,8 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 } catch(e) { Muse.Assert.fail('Error calling selector function:' + e); }});
 </script> 
 
-<!-->
-<!--- Original Code 
 
+<!--
 <h1>Food ForGive</h1>
 
 <p id="notice"><%= notice %></p>
