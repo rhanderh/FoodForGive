@@ -479,11 +479,6 @@
     border-radius: 15px;
     font-size: 0.8em;
     padding: 0.2em;
-    -pie-box-shadow: none;
-	-moz-box-shadow: 0px 0px 80px rgba(127, 127, 127, 0.53);
-	-webkit-box-shadow: 0px 0px 80px -1px rgba(127, 127, 127, 0.53);
-	box-shadow: 0px 0px 80px rgba(127, 127, 127, 0.53);
-	z-index 20000;
 }
 
 #confess_submit:hover
@@ -496,7 +491,7 @@
 	-moz-border-radius: 15px;
     border-radius: 15px;
     font-size: 0.8em;
-    padding: 0.2em
+    padding: 0.2em;
 }
 
 #magic-response
