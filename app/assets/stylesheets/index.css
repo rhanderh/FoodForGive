@@ -444,7 +444,7 @@ line-height: 10px;
 
 #u1808-6
 {
-	z-index: 94;
+	z-index: 120;
 	width: 239px;
 	min-height: 23px;
 	background-color: transparent;
@@ -458,14 +458,14 @@ line-height: 10px;
 	font-family: bubblegum-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 405px;
-	left: 428px;
+	margin-right: -100em;
+	margin-top: 19em;
+	left: 22.5em;
 }
 
 #confess_text_field
 {
-	z-index: 94;
+	z-index: 120;
 	width: 239px;
 	height: 23px;
 	font-size: 19px;
@@ -530,6 +530,7 @@ line-height: 10px;
 	left:2em;
 }
 
+/*
 #u1808-6:hover
 {
 	background-color: transparent;
@@ -539,8 +540,12 @@ line-height: 10px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	min-height: 23px;
-	margin: 405px -10000px 0px 0px;
+	margin-right: -100em;
+	margin-top: 21em;
+	left: 22.5em;
 }
+
+
 
 #u1808-6:active
 {
@@ -556,9 +561,9 @@ line-height: 10px;
 
 #u1808-6:active p,#u1808-6:active span
 {
-	visibility: hidden;/* 100% transparent text is hidden */
+	visibility: hidden;/* 100% transparent text is hidden 
 }
-
+*/
 #u1748
 {
 	z-index: 106;
