@@ -459,7 +459,7 @@ line-height: 10px;
 	font-weight: 400;
 	position: relative;
 	margin-right: -100em;
-	margin-top: 19em;
+	margin-top: 16em;
 	left: 22.5em;
 }
 
@@ -468,11 +468,16 @@ line-height: 10px;
 	z-index: 120;
 	width: 239px;
 	height: 23px;
-	font-size: 19px;
+	font-size: 17px;
 	border:1px solid black;
 	position: relative;
 	width: 100%;
 
+}
+
+#confess_field
+{
+	padding-top: 4em;
 }
 
 #confess_submit
@@ -483,6 +488,7 @@ line-height: 10px;
 	border:0.2em solid #F5A2C9;
 	-moz-border-radius: 15px;
     border-radius: 15px;
+    box-shadow: 2px 2px 2px #888888;
     font-size: 0.8em;
     padding: 0.2em;
 }
@@ -498,6 +504,12 @@ line-height: 10px;
     font-size: 0.8em;
     padding: 0.2em;
 }
+
+#confess_submit:active
+{
+  box-shadow: 0px 0px 0px #888888;
+}
+
 
 #magic-response
 {
@@ -521,6 +533,14 @@ line-height: 10px;
 	/*line-height: 23px;*/
 	font-size: 18px;
 	font-family: bubblegum-sans, sans-serif;
+	font-weight: 400;
+}
+#amount-response
+{
+	position: relative;
+	font-size: 19px;
+	font-family: linden-hill, sans-serif;
+	color: #7F7F7F;
 	font-weight: 400;
 }
 

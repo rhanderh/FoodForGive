@@ -52,9 +52,12 @@ responses[44] = "Why must this always be about you?"
 responses[45] = "So what’s the plan after this?"
 
 
+var min = 3;
+var max = 5;
 
 $('#magic-response').html("<%= escape_javascript(render(:partial => 'confessions/show_confession')).html_safe %>");
 $('#Random_Answer').append(responses[Math.floor(Math.random()*responses.length)]);
+$('#donate-amount').append(Math.floor(Math.random() * (max - min + 1) + min));
 }
 
 
