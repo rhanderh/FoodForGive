@@ -53,3 +53,6 @@ end
 
 #Ruby version
 ruby "1.9.3"
+
+#Stripe edition
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'

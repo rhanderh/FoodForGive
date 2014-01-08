@@ -4,8 +4,16 @@
 
   <p id="Random_Answer"></p>
   <p><div id="tiny-response">(two snaps and a hey)</div>Peace! You’re forgiven.</p>
-  <div id="amount-response"><br><p>Giving is part of ForGiving.</p><p>Please donate $<span id="donate-amount"></span> to a foodbank of your choice.</p></div><br>
+  <div id="amount-response"><br><p>Giving is part of ForGiving.</p><p>Please donate $<span id="donate-amount"></span> to a foodbank of your choice.</p>
+
+          
+  </div>
+
+  <br>
+  
   <div class="actions">
-	     <span id="confess_submit">Give to ForGive!</span>
+<%= form_tag charges_path do %>
+          <span id="confess_submit">Give to ForGive!</span>
+ <% end %>
   </div>
 

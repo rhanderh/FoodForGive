@@ -54,10 +54,32 @@ responses[45] = "So what’s the plan after this?"
 
 var min = 3;
 var max = 5;
+var $to_pay = Math.floor(Math.random() * (max - min + 1) + min);
+var $to_pay_amount = $to_pay * 100;
 
 $('#magic-response').html("<%= escape_javascript(render(:partial => 'confessions/show_confession')).html_safe %>");
 $('#Random_Answer').append(responses[Math.floor(Math.random()*responses.length)]);
-$('#donate-amount').append(Math.floor(Math.random() * (max - min + 1) + min));
+$('#donate-amount').append($to_pay);
+
+
+var handler = StripeCheckout.configure({
+    key: "<%= Rails.configuration.stripe[:publishable_key] %>",
+    image: 'assets/purplecherub12-u2852.png',
+    token: function(token, args) {
+      // Use the token to create the charge with a server-side script.
+    }
+  });
+
+  document.getElementById('confess_submit').addEventListener('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Food ForGive',
+      description: 'Donation to a local Foodbank',
+      amount: $to_pay_amount
+    });
+    e.preventDefault();
+  });
+
 }
 
 
