@@ -50,7 +50,14 @@
      
      
 
- 
+ <%=render '/payments/form', :@payment => Payment.new %>
+
+<div id="payment-response">
+	</div>
+     
+     
+     
+     
       <p>TRADEMARKS</p>
       <p>Food Forgive are trademarks owned by RH&amp;RH. Such trademarks may not be used in connection with any products or services that are not controlled by RH&amp;RH, or in any manner that is likely to cause confusion among customers, or in any manner that disparages or discredits RH&amp;RH or FoodForGive.com.</p>
      
@@ -60,9 +67,9 @@
 
   
     <!-- JS includes -->
-  <script type="text/javascript">
+<!-->  <script type="text/javascript">
    if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
-</script>
+</script>-->
   <script type="text/javascript">
    window.jQuery || document.write('\x3Cscript src="/assets/scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
 </script>
