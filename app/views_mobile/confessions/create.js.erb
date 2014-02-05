@@ -1,0 +1,75 @@
+if($('#confess_text_field').val() ==  "") {
+   $('#magic-fail').html("<p>Please enter at least one thing!</p>");
+   }
+else{
+$('#magic-fail').html("");
+var responses = new Array();
+responses[0] = "Confession is the first step towards success.";
+responses[1] = "You are free to focus on the future.";
+responses[2] = "You are strong enough to lift yourself up.";
+responses[3] = "There is opportunity in difficulty.";
+responses[4] = "Aim for success. Not Failure.";
+responses[5] = "You have to fall before you rise.";
+responses[6] = "By changing ourselves we change the world.";
+responses[7] = "You are what you do, not what you eat.";
+responses[8] = "So what? It’s good to be well rounded.";
+responses[9] = "Is that all?!?";
+responses[10] = "Oh no, you DIDN’T!";
+responses[11] = "The truth has set you free!";
+responses[12] = "We all make mistakes. Carry on.";
+responses[13] = "You can’t go to hell for that.";
+responses[14] = "Let’s find another hobby.";
+responses[15] = "It’s between you and me.";
+responses[16] = "Puh-lease. I’ve eaten two of those.";
+responses[17] = "What are you not telling me?";
+responses[18] = "It’s just food.";
+responses[19] = "Is there a deeper reason for this?";
+responses[20] = "The problem is not how much, but why?";
+responses[21] = "It’s between you and me."
+responses[22] = "Don’t stress it."
+responses[23] = "Tomorrow is another day."
+responses[24] = "This hurts me more than it does you."
+responses[25] = "You’re still beautiful."
+responses[26] = "I couldn’t love you more than now."
+responses[27] = "Been there. Done that."
+responses[28] = "There ARE worse things in life."
+responses[29] = "Someone had a GOOD time."
+responses[30] = "I’m tongue-tied."
+responses[31] = "Next time invite me and we can split it."
+responses[32] = "CALORIES, BE GONE!"
+responses[33] = "I heard that. Can I get an Amen?"
+responses[34] = "Why does this feel like déjà vu?"
+responses[35] = "It’s all fun and games until the bill comes."
+responses[36] = "If it tastes good, doesn’t mean it is good."
+responses[37] = "Love yourself."
+responses[38] = "I usually say that the dog ate it."
+responses[39] = "Maybe it was all just a bad dream."
+responses[40] = "Blame it on the weather."
+responses[41] = "Aliens made you do it...it was two aliens."
+responses[42] = "Tell me all about it. That’s why I’m here."
+responses[43] = "At least it wasn’t alive when you ate it."
+responses[44] = "Why must this always be about you?"
+responses[45] = "So what’s the plan after this?"
+
+
+var min = 3;
+var max = 5;
+var $to_pay = Math.floor(Math.random() * (max - min + 1) + min);
+var $to_pay_amount = $to_pay * 100;
+
+$('#magic-response').html("");
+$('#magic-response').append("<%= escape_javascript(render(:partial => 'confessions/show_confession')).html_safe %>");
+$('#Random_Answer').append(responses[Math.floor(Math.random()*responses.length)]);
+$('#donate-amount').append($to_pay);
+
+
+
+
+}
+
+
+
+
+
+
+
