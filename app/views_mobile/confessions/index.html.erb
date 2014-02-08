@@ -13,7 +13,7 @@
   <tbody>
     <% @confessions.each do |confession| %>
       <tr>
-        <td><%= confession.confession_text %></td>
+        <td><%= h(confession.confession_text) %></td>
         <td><%= link_to 'Show', confession %></td>
         <td><%= link_to 'Edit', edit_confession_path(confession) %></td>
         <td><%= link_to 'Destroy', confession, method: :delete, data: { confirm: 'Are you sure?' } %></td>

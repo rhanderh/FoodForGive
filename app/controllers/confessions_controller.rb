@@ -30,6 +30,7 @@ class ConfessionsController < ApplicationController
   # POST /confessions.json
   def create
     @confession = Confession.new(confession_params)
+    
 
     respond_to do |format|
       if @confession.save

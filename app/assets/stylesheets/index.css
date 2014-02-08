@@ -208,7 +208,7 @@
 
 #tm_span
 {
-font-size: 8px;
+font-size: 6px;
 line-height: 10px;
 }
 
@@ -483,12 +483,12 @@ line-height: 10px;
 #confess_submit
 {
 	position: relative;
-	color:#662D91;
-	background-color:#F5A2C9;
-	border:0.2em solid #F5A2C9;
-	-moz-border-radius: 15px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 2px #888888;
+	color:#FFFFFF;
+	background-color: #EC0101;
+	border: 0.2em solid #EC0101;
+	-moz-border-radius: 20px;
+	border-radius: 15px;
+	box-shadow: 4px 4px 2px #888888;
     font-size: 0.8em;
     padding: 0.2em;
 }
