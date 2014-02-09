@@ -206,6 +206,24 @@
 	left: 365px;
 }
 
+#email_para
+{
+	z-index: 200;
+	width: 452px;
+	min-height: 393px;
+	background-color: transparent;
+	text-align: center;
+	color: #7F7F7F;
+	line-height: 24px;
+	font-size: 19px;
+	font-family: linden-hill, sans-serif;
+	font-weight: 400;
+	position: absolute;
+	margin-right: -10000px;
+	margin-top: 250px;
+	left: 365px;
+}
+
 #tm_span
 {
 font-size: 6px;
@@ -503,6 +521,20 @@ line-height: 10px;
     border-radius: 15px;
     font-size: 0.8em;
     padding: 0.2em;
+}
+
+#payment-text
+{
+	background-color: transparent;
+	opacity: 0.85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+	filter: alpha(opacity=85);
+	text-align: center;
+	color: #662D91;
+	line-height: 23px;
+	font-size: 19px;
+	font-family: bubblegum-sans, sans-serif;
+	font-weight: 400;
 }
 
 #stripe-button
