@@ -9,7 +9,7 @@ class ConfessionsController < ApplicationController
   # GET /confessions
   # GET /confessions.json
   def index
-    @confessions = Confession.all.page(params[:page])
+    @confessions = Confession.order('created_at DESC').limit(500).page(params[:page])
   end
 
   # GET /confessions/1
