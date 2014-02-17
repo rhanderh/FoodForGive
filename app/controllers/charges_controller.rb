@@ -8,7 +8,12 @@ end
 def create
   # Amount in cents
 
-
+#Validate the amount to ensure it fits in the safe range.
+@donation = params[:amount]
+if @donation < 300 then @donation = 300 
+end
+if @donation > 500 then @donation = 500
+end
 
   customer = Stripe::Customer.create(
     :card  => params[:stripeToken]
@@ -17,7 +22,7 @@ def create
 
   charge = Stripe::Charge.create(
     :customer    => customer.id,
-    :amount      => params[:amount],
+    :amount      => @donation,
     :description => 'Food for give donation',
     :currency    => 'usd'
   )
