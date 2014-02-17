@@ -59,11 +59,17 @@
 	    <div class="grpelem" id="u3761"><!-- simple frame --></div>
 
 	     
-	    
+  		
 	     
 	   
 	     <div class="clearfix grpelem" id="u1808-6"><!-- content -->
 	     
+	     <div id="magic-response">
+	     	
+
+	     	
+	     <!--<p id="tiny-response">What do you feel guilty for eating? Come on, it's ok...</p> <br>-->
+
 	     <div id="magic-response">
 	     	
 
@@ -87,9 +93,14 @@
 	     <div id="magic-fail"></div> 
 	     </div>
 	     	      	
-
-
-     
+	     <!-- <div id="u3743_clip">
+	      <div class="actions", id="submit_confession">
+	           <%= f.submit "Forgive Yourself", :id => "confess_submit" %>
+	       </div>
+	       <img class="position_content" id="u3743_img" src="/assets/pink%20button.png" alt="" width="80" height="21"/>	       
+	     </div>-->
+       
+ 
      
      
      <div class="clip_frame grpelem" id="u1748"><!-- image -->
@@ -110,19 +121,36 @@
     <div class="clearfix colelem" id="pu3541-3"><!-- group -->
      <div class="clearfix grpelem" id="u3541-3"><!-- content -->
       <p>&nbsp;</p>
+
      </div>
+                      <div id="email_para">	   
+
+<a name="email_form"> </a>      	
+<p>You are Super Fun for scrolling all the way down here.</p><br>
+
+<p>Because giving is forgiving, Food ForGive hopes to partner with a food bank so that you can have the option of donating a few dollars after your confession. Let’s keep in touch because we want you to help us celebrate when that happens – and no, we’re not going to give away your private info because that’s no fun at all. Two snaps and a hey. See you soon! </p>
+   
+   <%=render '/payments/form', :@payment => Payment.new %>
+<Br>
+
+<div id="payment-text">	
+<div id="payment-response">
+	</div>
+	</div>
+     
+      </div>
      <img class="grpelem" id="u2855" src="/assets/hires-u2855.png" alt="" width="1190" height="828"/><!-- rasterized frame -->
+
      <div class="clip_frame clearfix pre_init grpelem" id="u2822"><!-- image -->
       <div id="u2822_clip">
        <img class="position_content" id="u2822_img" src="/assets/pink-background-radial.jpg" alt="" width="1281" height="812"/>
-       	      
-      </div>
+ 
      </div>
      <a class="anchor_item grpelem" id="contact"></a>
     </div>
     <div class="clearfix colelem" id="pu2908"><!-- group -->
      <img class="se_invi" id="u2908" src="/assets/contactboard-u2908.png" alt="" width="561" height="75"/><!-- rasterized frame -->
-     <a class="nonblock nontext anim_swing clearfix se_invi" id="u2915-16" href="index.html#home"><!-- content --><p id="u2915-2">Donate</p><p id="u2915-14"><span id="u2915-3">F</span><span id="u2915-4">oo</span><span id="u2915-5">d</span><span id="u2915-6">&nbsp;</span><span id="u2915-7">F</span><span id="u2915-8">o</span><span id="u2915-9">r</span><span id="u2915-10">G</span><span id="u2915-11">i</span><span id="u2915-12">v</span><span id="u2915-13">e</span></p></a>
+     <a class="nonblock nontext anim_swing clearfix se_invi" id="u2915-16" href="index.html#home"><!-- content --><p id="u2915-2">Stay in Touch!</p><p id="u2915-14"><span id="u2915-3">F</span><span id="u2915-4">oo</span><span id="u2915-5">d</span><span id="u2915-6">&nbsp;</span><span id="u2915-7">F</span><span id="u2915-8">o</span><span id="u2915-9">r</span><span id="u2915-10">G</span><span id="u2915-11">i</span><span id="u2915-12">v</span><span id="u2915-13">e</span></p></a>
     </div>
     <div class="clearfix colelem" id="pu3526"><!-- group -->
      <img class="grpelem" id="u3526" src="/assets/facebook-u3526.png" alt="" width="54" height="61"/><!-- rasterized frame -->
@@ -139,7 +167,7 @@
      </div>
      <div class="clearfix grpelem" id="u3564-6"><!-- content -->
       <p id="u3564-2">LIABILITY DISCLAIMER</p>
-      <p id="u3564-4"><span id="u3564-3">RH&amp;RH makes no representations or warranties of any kind, express or implied, as to the operation of the site, the information, content, materials or products included on this site. RH&amp;RH will not be liable for any damages arising from use of this site. Ultimately, all readings and advice arising from use of this site are understood to be for&nbsp; entertainment purposes only.</span></p>
+      <p id="u3564-4"><span id="u3564-3">RH&amp;RH makes no representations or warranties of any kind, express or implied, as to the operation of the site, the information, content, materials or products included on this site. RH&amp;RH will not be liable for any damages arising from use of this site. Ultimately, all readings and advice arising from use of this site are understood to be for entertainment purposes only.</span></p>
      </div>
     </div>
     <div class="verticalspacer"></div>
@@ -147,9 +175,9 @@
   </div>
   
     <!-- JS includes -->
-  <script type="text/javascript">
+<!-->  <script type="text/javascript">
    if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
-</script>
+</script>-->
   <script type="text/javascript">
    window.jQuery || document.write('\x3Cscript src="/assets/scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
 </script>
@@ -180,6 +208,29 @@ Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 } catch(e) { Muse.Assert.fail('Error calling selector function:' + e); }});
 </script> 
+
+
+<!--
+<h1>Food ForGive</h1>
+
+<p id="notice"><%= notice %></p>
+
+  <div id="magic_form">
+  	
+  <%= render '/confessions/form' %>
+  	
+
+  </div>
+  
+  <div id="magic-reponse">
+  </div>
+	
+<%=render '/payments/form', :@payment => Payment.new %>
+
+<div id="payment-response">
+	</div>
+	
+	---> 
 
 
 
