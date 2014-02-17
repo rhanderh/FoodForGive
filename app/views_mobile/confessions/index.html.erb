@@ -1,27 +1,63 @@
-<h1>Listing confessions</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Confession text</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
+  
+<div id="outer_confessions">
+
+ <div id="confession_header"><!-- group -->
+    <a  href=""><!-- content --><p id="u2915-2">Confessions</p><p id="u2915-14"><span id="u2915-3">F</span><span id="u2915-4">oo</span><span id="u2915-5">d</span><span id="u2915-6">&nbsp;</span><span id="u2915-7">F</span><span id="u2915-8">o</span><span id="u2915-9">r</span><span id="u2915-10">G</span><span id="u2915-11">i</span><span id="u2915-12">v</span><span id="u2915-13">e</span></p></a>
+</div>
+
+<div id="main_confessions">
+
+ 
     <% @confessions.each do |confession| %>
-      <tr>
-        <td><%= h(confession.confession_text) %></td>
-        <td><%= link_to 'Show', confession %></td>
-        <td><%= link_to 'Edit', edit_confession_path(confession) %></td>
-        <td><%= link_to 'Destroy', confession, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    
+        <li id="confess_line"><%= confession.confession_text %></li>
+       
+     
     <% end %>
-  </tbody>
-</table>
+
 
 <br>
 
-<%= link_to 'New Confession', new_confession_path %>
+<span id="confess_submit"> <%= link_to 'New Confession', new_confession_path %> </span>
+
+<br><br>
+
+</div>
+  </div>
+  
+
+<!-- Footer -->
+  
+<div id="footer_outer">
+	<div id="footer_inner">
+    <div class="clearfix colelem" id="pu3526_ft_row1"><!-- group -->
+     <img class="grpelem" id="u3526_media_button" src="/assets/facebook-u3526.png" alt="" width="54" height="61"/><!-- rasterized frame -->
+     <img class="grpelem" id="u3524_media_button" src="/assets/twitter2-u3524.png" alt="" width="54" height="61"/><!-- rasterized frame -->
+     <img class="grpelem" id="u3522_media_button" src="/assets/pinterest-u3522.png" alt="" width="54" height="61"/><!-- rasterized frame -->
+     <img class="grpelem" id="u3528_media_button" src="/assets/google-logo-u3528.png" alt="" width="58" height="65"/><!-- rasterized frame -->
+     <img class="grpelem" id="u3518_media_button" src="/assets/youtube-u3518.png" alt="" width="54" height="61"/><!-- rasterized frame -->
+    </div>
+    
+    <div id="pu3526_ft_row2">
+    <!-- image --><img src="/assets/r%20h%20-%20r%20h.png" id="rhrh_img" width="107" height="21"/>
+	  </div>
+
+   <div id="tm_text">
+      <p>TRADEMARKS</p>
+      <p>Food Forgive are trademarks owned by RH&amp;RH. Such trademarks may not be used in connection with any products or services that are not controlled by RH&amp;RH, or in any manner that is likely to cause confusion among customers, or in any manner that disparages or discredits RH&amp;RH or FoodForGive.com.</p>
+
+     
+      <br>
+      
+      <p >LIABILITY DISCLAIMER</p>
+      <p ><span>RH&amp;RH makes no representations or warranties of any kind, express or implied, as to the operation of the site, the information, content, materials or products included on this site. RH&amp;RH will not be liable for any damages arising from use of this site. Ultimately, all readings and advice arising from use of this site are understood to be for entertainment purposes only.</span></p>
+ 
+    </div>
+
+   </div>
+  </div>
+  
+
+
