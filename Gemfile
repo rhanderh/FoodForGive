@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#kaminari for handling paging simply
+gem 'kaminari'
+
 #jsroutes for handling routes in javascript
 gem 'js-routes'
 

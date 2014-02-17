@@ -510,6 +510,8 @@ line-height: 10px;
 	box-shadow: 4px 4px 2px #888888;
     font-size: 0.8em;
     padding: 0.2em;
+    a:link {color:#662D91}
+    a:hover {color:#FFFFFF}
 }
 
 #confess_submit:hover
@@ -522,6 +524,8 @@ line-height: 10px;
     border-radius: 15px;
     font-size: 0.8em;
     padding: 0.2em;
+    a:link {color:#662D91}
+    a:hover {color:#FFFFFF}
 }
 
 #pay_submit
@@ -919,6 +923,7 @@ line-height: 10px;
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
+	color:#662D91;
 }
 
 #u2915-16:hover p,#u2915-16:hover span,#u2915-16:active p,#u2915-16:active span

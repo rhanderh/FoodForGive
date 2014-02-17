@@ -9,7 +9,7 @@ class ConfessionsController < ApplicationController
   # GET /confessions
   # GET /confessions.json
   def index
-    @confessions = Confession.all
+    @confessions = Confession.all.page(params[:page])
   end
 
   # GET /confessions/1

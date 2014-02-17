@@ -83,19 +83,25 @@ body
 
 a:link
 {
-	color: #0000FF;
+	color: #662D91;
 	text-decoration: none;
 }
 
-a:visited
+a:link:visited
 {
-	color: #800080;
+	color: #662D91;
 	text-decoration: none;
 }
 
-a:hover
+a:link:hover
 {
-	color: #0000FF;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:visited:hover
+{
+	color: #FFFFFF;
 	text-decoration: none;
 }
 

@@ -4,12 +4,15 @@
 <div id="outer_confessions">
 
  <div id="confession_header"><!-- group -->
-    <a  href=""><!-- content --><p id="u2915-2">Confessions</p><p id="u2915-14"><span id="u2915-3">F</span><span id="u2915-4">oo</span><span id="u2915-5">d</span><span id="u2915-6">&nbsp;</span><span id="u2915-7">F</span><span id="u2915-8">o</span><span id="u2915-9">r</span><span id="u2915-10">G</span><span id="u2915-11">i</span><span id="u2915-12">v</span><span id="u2915-13">e</span></p></a>
+    <!-- content --><p id="u2915-2">Confessions</p><p id="u2915-14"><span id="u2915-3">F</span><span id="u2915-4">oo</span><span id="u2915-5">d</span><span id="u2915-6">&nbsp;</span><span id="u2915-7">F</span><span id="u2915-8">o</span><span id="u2915-9">r</span><span id="u2915-10">G</span><span id="u2915-11">i</span><span id="u2915-12">v</span><span id="u2915-13">e</span></p>
 </div>
 
 <div id="main_confessions">
 
- 
+ 	<%= paginate @confessions %>
+ 	
+ 	<br>
+ 	
     <% @confessions.each do |confession| %>
     
         <li id="confess_line"><%= confession.confession_text %></li>
@@ -58,6 +61,8 @@
 
    </div>
   </div>
+  
+
   
 
 
