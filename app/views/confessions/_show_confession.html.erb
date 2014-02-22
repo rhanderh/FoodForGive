@@ -4,18 +4,23 @@
 
   <p id="Random_Answer"></p>
   <p><div id="tiny-response">(two snaps and a hey)</div>Peace! You’re forgiven.</p>
-  <div id="amount-response"><br><p>Giving is part of ForGiving.</p><p>Please donate $<span id="donate-amount"></span> to a foodbank of your choice.</p>
-
+ 
           
   </div>
 
   <br>
   
-  <%= form_tag(charges_path, remote: true) do %>
+ <a href="#email_form"> <span id="pay_submit">Give to ForGive!</span></a>
+ 
+ <br><br><br>
+      <div class="actions", id="submit_confession">
+	         <%= link_to '<span id="confess_submit">New Confession</span>'.html_safe, root_path %>
+	     </div>
+ <!-- <%= form_tag(charges_path, remote: true) do %>
   
   
       <span id="confess_submit">Give to ForGive!</span>
-          
+
   <script>
           	var handler = StripeCheckout.configure({
     key: "<%= Rails.configuration.stripe[:publishable_key] %>",
@@ -38,8 +43,8 @@
     });
     e.preventDefault();
   });
-          </script>
+  </script> -->
 
 
 
- <% end %>
+ <!--<% end %> -->
