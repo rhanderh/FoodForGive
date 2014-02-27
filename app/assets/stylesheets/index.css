@@ -494,6 +494,18 @@ line-height: 10px;
 
 }
 
+#payment_text_field
+{
+	z-index: 120;
+	width: 239px;
+	height: 23px;
+	font-size: 17px;
+	border:1px solid black;
+	position: relative;
+	width: 100%;
+
+}
+
 #confess_field
 {
 	padding-top: 4em;
