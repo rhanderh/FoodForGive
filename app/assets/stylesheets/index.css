@@ -1150,7 +1150,27 @@ div#main_confessions {
     font-family: bubblegum-sans, sans-serif;
 	font-weight: 400;
 	font-size: 20px;
-
+}
+#footer_inner ul {
+	background:red;
+	display:block;
+	width:100%;
+	float:left;
+}
+#footer_inner ul li {
+	display:inline-block;
+	background:orange;
+	text-align:center;
+}
+div#main_content {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 25px;
+    padding: 10px;
+    text-align:center;
+    font-family: linden-hill, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
 }
 
 #confess_line
