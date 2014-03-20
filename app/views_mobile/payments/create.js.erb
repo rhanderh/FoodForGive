@@ -1,0 +1,19 @@
+
+
+
+  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  
+  if( !emailReg.test( $('#payment_text_field').val() ) ) {
+     $('#payment-response').html("<p>Really?  Please try a legit e-mail...</p>");
+  } 
+  else if ($('#payment_text_field').val() == "")
+  {
+  	$('#payment-response').html("<p>Really?  Please try a legit e-mail...</p>");
+  }
+  else {
+    $('#payment-response').html("<p>Thank you, we will be in touch shortly!</p><br>");
+	$('#payment-response').append("<%= escape_javascript(link_to 'See what others have confessed...', confessions_path, :id => "confess_submit")  %>");
+	new_payment.payment_text_field.value="";
+  }
+
+

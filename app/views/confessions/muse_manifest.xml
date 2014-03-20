@@ -1,0 +1,59 @@
+<manifest alg="2" build="329" opt="false" iceEnabled="true">
+  <folder name="css">
+    <file name="site_global.css" crc="417434784"/>
+    <file name="about.css" crc="4138865207" ref="about"/>
+    <file name="index.css" crc="4053720094" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3828297711" ref="phone>index:tablet>index:index:about"/>
+    <file name="museutils.js" crc="117816282" ref="phone>index:tablet>index:index:about"/>
+    <file name="jquery.watch.js" crc="4199601726" ref="phone>index:tablet>index:index:about"/>
+    <file name="jquery.scrolleffects.js" crc="3963828924" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="smallertile.jpg" crc="419446790" ref="index:about"/>
+    <file name="daisy-u2918.png" crc="365576165" ref="index"/>
+    <file name="purplecherub12-u2852.png" crc="3994292694" ref="index"/>
+    <file name="notecard2-u1746.png" crc="459682837" ref="index"/>
+    <file name="cherub12-u2830.png" crc="3850581428" ref="index"/>
+    <file name="daisy-u2924.png" crc="365576165" ref="index"/>
+    <file name="6588041 copy-u2875.jpg" crc="4144321584" ref="index"/>
+    <file name="pink-background-radial.jpg" crc="113841259" ref="index"/>
+    <file name="plate-u2503.png" crc="92640950" ref="index"/>
+    <file name="plate 2-u2505.png" crc="4255592169" ref="index"/>
+    <file name="plate.png" crc="380540968" ref="index"/>
+    <file name="plate 2-u1908.png" crc="291987157" ref="index"/>
+    <file name="fork 2.png" crc="38663464" ref="index"/>
+    <file name="knife.png" crc="3932987959" ref="index"/>
+    <file name="youtube-u3190.png" crc="3846349314" ref="index"/>
+    <file name="pinterest-u3228.png" crc="3760916918" ref="index"/>
+    <file name="twitter2-u3200.png" crc="4067628175" ref="index"/>
+    <file name="facebook-u3173.png" crc="4011753384" ref="index"/>
+    <file name="google-logo-u3398.png" crc="3992601708" ref="index"/>
+    <file name="pink button.png" crc="3968597883" ref="index"/>
+    <file name="topornament.jpg" crc="485663128" ref="index"/>
+    <file name="hires-u2855.png" crc="4241407162" ref="index"/>
+    <file name="contactboard-u2908.png" crc="3949109244" ref="index"/>
+    <file name="facebook-u3526.png" crc="160897304" ref="index"/>
+    <file name="twitter2-u3524.png" crc="4067628175" ref="index"/>
+    <file name="pinterest-u3522.png" crc="3760916918" ref="index"/>
+    <file name="google-logo-u3528.png" crc="3992601708" ref="index"/>
+    <file name="youtube-u3518.png" crc="3846349314" ref="index"/>
+    <file name="r h - r h.png" crc="3759835370" ref="index"/>
+    <file name="purplecherub-u3418.png" crc="8813983" ref="about"/>
+  </folder>
+  <folder name="tablet">
+    <folder name="css">
+      <file name="index.css" crc="3854414802" ref="tablet>index"/>
+    </folder>
+    <file name="index.html" crc="4137863087" mt="1387420630420" redirect="false"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="index.css" crc="4264408292" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="4113399784" mt="1387420630431" redirect="false"/>
+  </folder>
+  <file name="index.html" crc="236966842" mt="1387670315593" redirect="true"/>
+  <file name="about.html" crc="3885835905" mt="1387669832099" redirect="true"/>
+</manifest>

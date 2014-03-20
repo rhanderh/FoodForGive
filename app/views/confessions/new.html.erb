@@ -1,0 +1,152 @@
+
+<div id="cherub1" class="cherub"></div>
+<div id="cherub2" class="cherub"></div>
+<span class="face">
+	<span class="limiter">
+        <header>
+            <h1>
+            	<a href="http://www.foodforgive.com"><span><span>Food ForGive<sub>&trade;</sub></span></span></a>
+                <span class="end"></span>
+                <br class="clear" />
+			</h1>
+        </header>
+        <section class="mast">
+            <div class="mast_inner">
+            	
+            	
+	    <%= form_for(@confession, remote: true) do |f| %>
+ 	 	<% if @confession.errors.any? %>
+   	 	<div id="error_explanation">
+      	<h2><%= pluralize(@confession.errors.count, "error") %> - Sorry!  This made the confession not record.  The Food ForGive team will be right on it, so come back soon!</h2>
+
+     	 <ul>
+      	<% @confession.errors.full_messages.each do |msg| %>
+      	  <li><%= msg %></li>
+      	<% end %>
+     	 </ul>
+    	</div>
+  		<% end %>
+  		
+	     
+	   
+	 
+	     
+	     <div id="magic-response">
+	     	
+
+	     	
+	     <!--<p id="tiny-response">What do you feel guilty for eating? Come on, it's ok...</p> <br>-->
+
+	     <div id="confess_field" class="field"> <%= f.text_field :confession_text, 	     						
+
+	     						:value => "", 
+	     						:placeholder => "Please enter a food confession...",
+	     						:style => "text-align: Center",
+	     						:id => "confess_text_field"  %> </div>
+	     <br>
+
+         <div class="actions", id="submit_confession">
+	     <%= f.submit "Forgive Yourself", :id => "confess_submit" %>
+	     </div>
+	       
+	     </div>
+	    
+	     <br>
+	     
+	     <div id="magic-fail"></div> 
+	  
+	     	      	
+	     <!-- <div id="u3743_clip">
+	      <div class="actions", id="submit_confession">
+	           <%= f.submit "Forgive Yourself", :id => "confess_submit" %>
+	       </div>
+	       <img class="position_content" id="u3743_img" src="/assets/pink%20button.png" alt="" width="80" height="21"/>	       
+	     </div>-->
+                           
+                    <ul class="social">
+                        <li><a href="" title="Find Food ForGive on Facebook" class="facebook"><span>Facebook</span></a></li>
+                        <li><a href="" title="Follow ForGive on Twitter" class="twitter"><span>Twitter</span></a></li>
+                        <li><a href="" title="Visit the Food ForGive Pinterest Board" class="pinterest"><span>Pinterest</span></a></li>
+                        <li><a href="" title="Join the Food ForGive Google+ Circle" class="google"><span>Google+</span></a></li>
+                        <li><a href="" title="Check out the Food ForGive YouTube Channel" class="youtube"><span>YouTube</span></a></li>
+                    </ul>
+     <% end %>
+                    
+                    
+
+                
+                <br class="clear" />
+            </div>
+        </section>
+    </span><!-- /.limiter -->
+</span>
+<section class="info">
+    <span class="layer a">
+        <span class="layer b">
+            <span class="layer c">
+                <span class="limiter">
+                    <span class="textParent">
+                    <h2>Food ForGive<sub>&trade;</sub></h2>
+                        <p>Giving is part of ForGiving.</p>
+                        <p>Food ForGive can forgive any kind of food transgressions, lapses in judgment, or moments of bacchanalian food insanity. Our Confession Cherubs<sub>&trade;</sub> lift your confessions to the Divine who, in turn, offers encouragement so that you can declare, &quot;I'm moving on -- mmmkay.&quot;</p>
+                        <p>In the near future, Food ForGive hopes to provide options for you to donate a few dollars to a local food bank. The ultimate, morale-boosting goal of Food ForGive is not only to provide food forgiveness, but also to provide food for give to people and hungry kids in need. Can we get two snaps and a hey?</p>
+                        <p>Thank you. Peace! And Love.</p>
+                    </span><!-- /.textParent -->
+                </span><!-- /.limiter -->
+            </span><!-- /.layer .c -->
+        </span><!-- /.layer .b -->
+    </span><!-- /.layer .a -->
+</section>
+<section class="aux">
+	<span class="limiter">
+        <span class="textParent">
+           
+            <p>You are Super Fun for scrolling all the way down here.</p>
+            <p>Because giving is forgiving, Food ForGive hopes to partner with a food bank so that you can have the option of donating a few dollars after your confession. Let's keep in touch because we want you to help us celebrate when that happens &ndash; and no, we're not going to give away your private info because that's no fun at all. Two snaps and a hey. See you soon!</p>
+           
+               <%=render '/payments/form', :@payment => Payment.new %>
+<Br>
+
+<div id="payment-text">	
+<div id="payment-response">
+	</div>
+	</div>
+        </span><!-- /.aux -->
+    </span><!-- /.limiter -->
+</section>
+
+
+<footer>
+        <span class="limiter">
+        <ul class="social">
+            <li><a href="" title="Find Food ForGive on Facebook" class="facebook"><span>Facebook</span></a></li>
+            <li><a href="" title="Follow ForGive on Twitter" class="twitter"><span>Twitter</span></a></li>
+            <li><a href="" title="Visit the Food ForGive Pinterest Board" class="pinterest"><span>Pinterest</span></a></li>
+            <li><a href="" title="Join the Food ForGive Google+ Circle" class="google"><span>Google+</span></a></li>
+            <li><a href="" title="Check out the Food ForGive YouTube Channel" class="youtube"><span>YouTube</span></a></li>
+        </ul>
+        <h3>RH<sup>3</sup></h3>
+        <div>
+            <h4>Trademarks</h4>
+            <p>Food Forgive are trademarks owned by RH<sup>3</sup>. Such trademarks may not be used in connection with any products or services that are not controlled by RH<sup>3</sup>, or in any manner that is likely to cause confusion among customers, or in any manner that disparages or discredits RH<sup>3</sup> or FoodForGive.com.</p>
+        </div>
+        <div>
+            <h4>Liability Disclaimer</h4>
+            <p>RH<sup>3</sup> makes no representations or warranties of any kind, express or implied, as to the operation of the site, the information, content, materials or products included on this site. RH<sup>3</sup> will not be liable for any damages arising from use of this site. Ultimately, all readings and advice arising from use of this site are understood to be for entertainment purposes only.</p>
+        </div>
+        <br class="clear" />
+	</span><!-- /.limiter -->
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+

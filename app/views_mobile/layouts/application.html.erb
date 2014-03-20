@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html class="html">
+<head>
+  <title>FoodForGive</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="7.1.329.244"/>
+
+  <%= csrf_meta_tags %>
+  
+
+  <!--<%= javascript_include_tag 'jquery_ujs' %>-->
+  <%= javascript_include_tag 'application'%>
+ 
+ 
+<link rel="stylesheet" type="text/css" href="/assets/site_global.css?417434784"/>
+<link rel="stylesheet" type="text/css" href="/assets/index.css?4053720094" id="pagesheet"/>
+
+
+  <script type="text/javascript">
+   document.documentElement.className += ' js';
+var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/linden-hill:n4:all;bubblegum-sans:n4:all;henny-penny:n4:all.js" type="text/javascript">\x3C/script>');
+</script>
+
+<script src="https://checkout.stripe.com/checkout.js"></script>
+
+   </head>
+
+
+
+</head>
+<body> 
+
+
+<%= yield %>
+
+</body>
+</html>

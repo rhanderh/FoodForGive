@@ -1,0 +1,52 @@
+
+
+
+<div id="magic_response_inner">
+  <p id="Random_Answer"></p>
+  <p><div id="tiny-response">(two snaps and a hey)</div>Peace! You’re forgiven.</p>
+ 
+          
+  </div>
+
+  <br>
+  
+ <a href="#email_form"> <span id="pay_submit">Give to ForGive!</span></a>
+ 
+ <br><br><br>
+      <div class="actions", id="submit_confession">
+	         <%= link_to '<span id="confess_submit">New Confession</span>'.html_safe, root_path %>
+	     </div>
+	     
+	   </div>
+ <!-- <%= form_tag(charges_path, remote: true) do %>
+  
+  
+      <span id="confess_submit">Give to ForGive!</span>
+
+  <script>
+          	var handler = StripeCheckout.configure({
+    key: "<%= Rails.configuration.stripe[:publishable_key] %>",
+    image: 'assets/purplecherub12-u2852.png',
+    token: function(token, args) {
+      // Use the token to create the charge with a server-side script.
+      var tokenInput = $("<input type=hidden name=stripeToken />").val(token.id);
+  	  var amountInput = $("<input type=hidden name=amount />").val($to_pay_amount);
+  	  var authenticityToken =$("<input type=hidden value=<%= form_authenticity_token() %> name=authenticity_token />")
+      $("form").append(tokenInput).append(amountInput).append(authenticityToken).trigger('submit.rails');
+    }
+  });
+
+  document.getElementById('confess_submit').addEventListener('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Food ForGive',
+      description: 'Donation to a local Foodbank',
+      amount: $to_pay_amount
+    });
+    e.preventDefault();
+  });
+  </script> -->
+
+
+
+ <!--<% end %> -->

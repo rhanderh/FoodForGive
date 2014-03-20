@@ -1,0 +1,29 @@
+<%= form_for(@confession, remote: true) do |f| %>
+  <% if @confession.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@confession.errors.count, "error") %> - Sorry!  This made the confession not record.  The Food ForGive team will be right on it, so come back soon!</h2>
+
+      <ul>
+      <% @confession.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :confession_text, 'Share your latest guilty food-pleasure, and find your forgiveness...' %><br>
+    <%= f.text_field :confession_text, :id => "confess_text_field" %>
+  </div>
+  <div class="actions", id="submit_confession">
+    <%= f.submit "Forgive Yourself", :id => "confess_submit" %>
+  </div>
+  
+  <div id="magic-response"></div>
+  
+
+
+<% end %>
+
+
+

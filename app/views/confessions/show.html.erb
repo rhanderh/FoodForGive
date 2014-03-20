@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Confession text:</strong>
+  <%= @confession.confession_text %>
+</p>
+
+<%= link_to 'Edit', edit_confession_path(@confession) %> |
+<%= link_to 'Back', confessions_path %>
