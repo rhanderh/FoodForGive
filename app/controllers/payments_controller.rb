@@ -1,5 +1,5 @@
 class PaymentsController < ApplicationController
-  before_filter :check_for_mobile
+ # before_filter :check_for_mobile
   before_action :set_payment, only: [:show, :edit, :update]
   respond_to :html, :js, :json
   # GET /payments

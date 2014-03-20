@@ -15,3 +15,6 @@ var handler = StripeCheckout.configure({
     });
     e.preventDefault();
   });
+  
+
+

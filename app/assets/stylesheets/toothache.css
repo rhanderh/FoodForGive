@@ -1,0 +1,508 @@
+@charset "UTF-8";
+/*
+	File:		toothache.css
+	Author:		Raymond Heredia (rh[at]whwk.me)
+	Mod-Author: Ryan Handerhan
+	Version:	1.0
+	Date:		March 3, 2014
+	
+	This is the super-sweet cherub styling.  Swap this file out to change the theme down the road.	
+*/
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300|Henny+Penny|Linden+Hill);
+/* REFERENCE:
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Henny Penny', cursive;
+font-family: 'Linden Hill', serif;
+*/
+/*body:after {
+	background:yellow;
+	position:absolute;
+	padding:5px;
+	color: #000;
+	bottom:40%;
+	font-size:14px;
+	content:"This is a work in progress.  Don't judge me yet.  ^^;";
+	display:block;
+	border-top: 3px dashed #000;
+	border-bottom: 3px dashed #000;
+	float:left;
+	width:100%;
+	text-align:center;
+	transform:rotate(-7deg);
+	-ms-transform:rotate(-7deg);
+	-webkit-transform:rotate(-7deg);
+}*/
+
+
+div#outer_confessions {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:25px;
+    padding-bottom:25px;
+    background: url('/assets/pink-background-radial.jpg');
+    position:relative;
+}
+
+div#main_confessions {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 25px;
+    padding: 10px;
+    text-align:center;
+    font-family: bubblegum-sans, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+div#main_content {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 25px;
+    padding: 10px;
+    text-align:center;
+    font-family: linden-hill, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+#confess_line
+{
+	position: relative;
+	color:#662D91;
+	background-color: #FFFFFF;
+	border: 0.2em solid #FFFFFF;
+	-moz-border-radius: 20px;
+	border-radius: 15px;
+	box-shadow: 4px 4px 2px #888888;
+    padding: 0.6em;
+    margin-bottom: 2em;
+}
+
+
+#confess_text_field
+{
+	z-index: 120;
+	width:300px;
+	font-size: 17px;
+	border:1px solid black;
+
+
+}
+
+#payment_text_field
+{
+	z-index: 120;
+	font-size: 17px;
+	border:1px solid black;
+	position: relative;
+	width: 100%;
+
+}
+
+
+#confess_submit
+{
+	position: relative;
+	color:#662D91;
+	background-color: #F5A2C9;
+	border: 0.2em solid #F5A2C9;
+	-moz-border-radius: 20px;
+	border-radius: 15px;
+	box-shadow: 4px 4px 2px #888888;
+    font-size: 0.8em;
+    padding: 0.2em;
+    a:link {color:#662D91}
+    a:hover {color:#FFFFFF}
+}
+
+#confess_submit:hover
+{
+	
+	color:#FFFFFF;
+	background-color:#F5A2C9;
+	border:0.2em solid #F5A2C9;
+	-moz-border-radius: 15px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.2em;
+    a:link {color:#662D91}
+    a:hover {color:#FFFFFF}
+}
+
+#pay_submit
+{
+	color:#FFFFFF;
+	background-color: #EE0000;
+	border: 0.2em solid #EE0000;
+	-moz-border-radius: 20px;
+	border-radius: 15px;
+	box-shadow: 4px 4px 2px #888888;
+    font-size: 0.8em;
+    padding: 0.2em;
+}
+
+#confess_submit:hover
+{
+
+	color:#FFFFFF;
+	background-color:#F5A2C9;
+	border:0.2em solid #F5A2C9;
+	-moz-border-radius: 15px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.2em;
+}
+
+#pay_submit:hover
+{
+	
+	color:#FFFFFF;
+	background-color:#F5A2C9;
+	border:0.2em solid #F5A2C9;
+	-moz-border-radius: 15px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.2em;
+}
+
+#payment-text
+{
+	background-color: transparent;
+	opacity: 0.85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+	filter: alpha(opacity=85);
+	text-align: center;
+	color: #662D91;
+	line-height: 23px;
+	font-size: 19px;
+	font-family: bubblegum-sans, sans-serif;
+	font-weight: 400;
+}
+
+#stripe-button
+{
+	z-index: 200;
+}
+
+#confess_submit:active
+{
+  box-shadow: 0px 0px 0px #888888;
+}
+
+
+
+#magic-fail
+{
+
+	/*line-height: 23px;*/
+	font-size: 23px;
+	font-family: bubblegum-sans, sans-serif;
+	font-weight: 400;
+	color: #662D91;
+}
+
+#Random_Answer
+{
+	font-size: 28px;
+	line-height: 32px;
+}
+
+#tiny-response
+{
+
+	/*line-height: 23px;*/
+	font-size: 18px;
+	font-family: bubblegum-sans, sans-serif;
+	font-weight: 400;
+}
+#amount-response
+{
+
+	font-size: 19px;
+	font-family: linden-hill, sans-serif;
+	color: #7F7F7F;
+	font-weight: 400;
+}
+
+
+
+#magic_response_inner
+{
+
+	padding-top:200px;
+	width:40%;
+	padding-right:30%;
+	padding-left:30%;
+	
+	
+}
+
+
+#magic-response
+{
+
+	font-size: 19px;
+	font-family: bubblegum-sans, sans-serif;
+	color: #662D91;
+	font-weight: 400;
+}
+
+.cherub {
+	position:absolute;
+	z-index:1;
+	background-color:rgba(0,0,0,.3);
+}
+#cherub1 {
+	height:400px;
+	width:350px;
+	left:12%;
+	top:150px;
+	/*border:3px dashed #FFF;*/
+	background: url('/assets/purplecherub12-u2852.png');
+}
+#cherub2 {
+	height:450px;
+	width:400px;
+	right:12%;
+	top:60px;
+	/*border:3px dashed #FFF;*/
+	background: url('/assets/cherub12-u2830.png')
+}
+h1 {
+	padding:30px 0 10px;
+	margin:0 auto;
+	text-align:center;
+	display:block;
+	font-family: 'Henny Penny', cursive;
+	font-size:2.5em;
+	width:450px;
+	clear:both;
+}
+h1 a {
+	text-decoration:none;
+	display:block;
+	margin:0 auto 0 30px;
+	width:350px;
+	border:2px solid #CCC;
+	background:#FFF;
+	padding:10px 0;
+	color:#662D91;
+	float:left;
+}
+
+div a {
+	text-decoration:none;
+}
+
+h1 a:hover {
+	color:#F5A2C9;	
+}
+h1 a > span {
+	background:url(/assets/t_orn.png) no-repeat top center;
+	display:block;
+	padding:40px 0 0;
+}
+h1 a > span span {
+	background:url(/assets/b_orn.png) no-repeat bottom center;
+	display:block;
+	padding:0 0 26px;
+}
+h1 .end {
+	width:30px;
+	height:100px;
+	display:block;
+	background:url(/assets/backing.png) no-repeat left top;
+	float:left;
+}
+.social span {
+	display:none;	
+}
+h2 {
+	font-family: 'Henny Penny',cursive;
+	font-size:1.5em;
+	color:#662D91;
+}
+footer h3 {
+	text-align:center;
+	margin:10px 0;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:3em;
+	color:#662D91;
+}
+h4 {
+	text-transform:uppercase;
+}
+section {
+	padding:20px 0;	
+}
+.face { /* pink radial gradient */
+	display:block;
+	background: #ffffff; /* Old browsers */
+	
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjRhMmNhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  #ffffff 1%, #f4a2ca 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#ffffff), color-stop(100%,#f4a2ca)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 1%,#f4a2ca 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #ffffff 1%,#f4a2ca 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #ffffff 1%,#f4a2ca 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #ffffff 1%,#f4a2ca 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4a2ca',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+.mast {
+	padding:0;	
+}
+.mast_inner {
+	margin:0 auto;
+	width:80%;
+}
+.mast form {
+	text-align:center;
+	background:url(/assets/placeSetting.png) no-repeat center;
+	margin:0 auto 30px;
+	height:500px;
+	display:block;
+	position:relative;
+}
+.mast form input[type="text"] {
+	margin-top:250px;
+	text-align:center;
+	width:300px;
+	font-family: bubblegum-sans, sans-serif;
+}
+form input[type="submit"] {
+	clear:both;
+	padding:5px 10px;
+	color:#662D91;
+	background:#F5A2C9;
+	border-radius:5px;
+	font-size:.8rem;
+	text-align:center;
+	display:block;
+	border:none;
+	margin:10px auto 0;
+	cursor:pointer;
+	box-shadow:5px 5px 5px rgba(0,0,0,.5);
+	border:1px solid #CCC;
+	font-family: bubblegum-sans, sans-serif;
+}
+form input[type="submit"]:hover {
+	color:#FFF;
+}
+.layer {
+	display:block;
+	width:100%;
+}
+.layer.a {
+	background:url(/assets/t_lump.png) repeat-x top;
+	padding-top:40px;
+}
+.layer.b {
+	background:url(/assets/b_lump.png) repeat-x bottom;
+	padding-bottom:40px;
+}
+.layer.c {
+	background:#f6f3ee;
+	padding:20px 0;
+}
+.textParent {
+	width:65%;
+	margin:0 auto;
+	display:block;
+}
+.info {
+	padding:40px 0;	
+}
+.info p, .aux p {
+	margin:20px 0;
+	line-height:1.3em;
+	color:#7F7F7F;
+	text-align:center;
+}
+.info {
+	background:url(/assets/stripes.png);
+	text-align:center;
+	font-family: 'Linden Hill', serif;
+	color:#7F7F7F;
+}
+.aux {
+	font-family: 'Linden Hill', serif;
+	color:#7F7F7F;
+	background:url(/assets/pinkDaisies.png);
+	padding:50px 0;
+}
+.aux form {
+	text-align:center;	
+}
+.aux form input[type="text"] {
+	width:50%;
+	text-align:center;
+}
+footer {
+	background:#FFF;
+	padding:20px 0;
+}
+.social {
+	text-align:center;	
+}
+footer .social li {
+	display:inline-block;
+}
+.social a {
+	display:block;
+	height:32px;
+	width:32px;
+	background:url(/assets/social.png) no-repeat;
+}
+.mast .social {
+	right:0;
+	top:30%;
+	position:absolute;	
+}
+footer .social li + li {
+	margin-left:10px;	
+}
+footer div {
+	width:43%;
+	float:left;
+	padding:10px 3%;
+	font-size:.625rem;
+}
+footer p {
+	line-height:1.3em;
+	font-family:Verdana, Geneva, sans-serif;
+}
+br.clear {
+	clear:both;
+	height:0;
+	visibility:hidden;
+	color:transparent;
+	display:block;	
+}
+br.clear:after {
+	content:".";	
+}
+sup, sub {
+	font-size:.625rem;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#000;	
+}
+sup {
+	vertical-align:super;	
+}
+sub {
+	vertical-align: sub;	
+}
+.facebook {background-position:0 0 !important;}
+.twitter {background-position:-42px 0 !important;}
+.pinterest {background-position:-84px 0 !important;}
+.google {background-position:-126px 0 !important;}
+.youtube {background-position:-168px 0 !important;}
+.limiter {
+	width:1024px;
+	display:block;
+	margin:0 auto;
+	
+	
+	
