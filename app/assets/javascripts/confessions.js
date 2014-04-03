@@ -1,3 +1,8 @@
+
+
+
+
+/*Stripe Checkout JS*/
 var handler = StripeCheckout.configure({
     key: 'pk_test_m7pP4iOBh17N1YhakEfds5FU',
     image: 'assets/purplecherub12-u2852.png',
@@ -16,5 +21,6 @@ var handler = StripeCheckout.configure({
     e.preventDefault();
   });
   
+
 
 

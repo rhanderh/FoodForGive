@@ -138,7 +138,40 @@
 	</span><!-- /.limiter -->
 </footer>
 
+<script>
 
+/*Cherub Animations*/
+ 
+
+$(document).ready(function(){
+    var boxpos = 17;
+    var last_scroll = 0;
+    $("#cherub1").css("left", boxpos);
+    $("#cherub2").css("right", boxpos);
+
+    $(window).scroll(function(){
+    	//Set the current scroll position
+        var pos = $(document).scrollTop();
+        if(pos > last_scroll){
+        	//We are scrolling down!
+            boxpos = boxpos-2;
+            $("#cherub1").css("left", boxpos);
+            $("#cherub2").css("right", boxpos);
+           }
+         else
+         {
+        	//We are going up!
+        	boxpos = boxpos+2;
+            $("#cherub1").css("left", boxpos);
+            $("#cherub2").css("right", boxpos);
+         }
+      //Update the scroll position
+      last_scroll = pos;
+
+    });
+});
+
+</script>
 
 
 
