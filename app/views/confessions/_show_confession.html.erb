@@ -12,10 +12,11 @@
 
   <br>
   
+
   <%= form_tag(charges_path, remote: true) do %>
   
   
-      <span id="confess_submit">Give to ForGive!</span>
+      <span id="pay_submit">Give to ForGive!</span>
           
   <script>
     var handler = StripeCheckout.configure({
@@ -30,7 +31,7 @@
     }
   });
 
-  document.getElementById('confess_submit').addEventListener('click', function(e) {
+  document.getElementById('pay_submit').addEventListener('click', function(e) {
     // Open Checkout with further options
     handler.open({
       name: 'Food ForGive',

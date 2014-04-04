@@ -32,6 +32,10 @@ font-family: 'Linden Hill', serif;
 	-ms-transform:rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
 }*/
+.html
+{
+	background: #7F7F7F url("../images/smallertile.jpg") repeat left top;
+}
 
 
 div#outer_confessions {
@@ -99,6 +103,36 @@ div#main_content {
 
 }
 
+#donate_submit
+{
+	background-color: #EE0000;
+	color:#FFFFFF;
+	position: relative;
+	color:#662D91;
+	border: 0.2em solid #EE0000;
+	-moz-border-radius: 20px;
+	border-radius: 15px;
+	box-shadow: 4px 4px 2px #888888;
+    font-size: 0.8em;
+    padding: 0.2em;
+    a:link {color:#FFFFFF};
+    a:hover {color:#F5A2C9} !important;
+}
+
+#donate_submit:hover
+{
+	
+	color:#F5A2C9;
+	background-color:#EE0000;
+	border:0.2em solid #FFFFFF;
+	-moz-border-radius: 15px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.2em;
+    a:link {color:#FFFFFF};
+    a:hover {color:#F5A2C9};
+}
+
 
 #confess_submit
 {
@@ -114,6 +148,8 @@ div#main_content {
     a:link {color:#662D91}
     a:hover {color:#FFFFFF}
 }
+
+
 
 #confess_submit:hover
 {
@@ -141,17 +177,7 @@ div#main_content {
     padding: 0.2em;
 }
 
-#confess_submit:hover
-{
 
-	color:#FFFFFF;
-	background-color:#F5A2C9;
-	border:0.2em solid #F5A2C9;
-	-moz-border-radius: 15px;
-    border-radius: 15px;
-    font-size: 0.8em;
-    padding: 0.2em;
-}
 
 #pay_submit:hover
 {
@@ -336,6 +362,12 @@ h4 {
 section {
 	padding:20px 0;	
 }
+
+li
+{
+    list-style-type: none;
+}
+
 .face { /* pink radial gradient */
 	display:block;
 	background: #ffffff; /* Old browsers */
@@ -359,13 +391,18 @@ section {
 }
 .mast form {
 	text-align:center;
-	background:url(/assets/placeSetting.png) no-repeat center;
-	background-size: contain;
 	margin:0 auto 30px;
 	height:600px;
 	display:block;
 	position:relative;
 }
+
+#form_bg
+{
+background:url(/assets/placeSetting.png) no-repeat center;
+background-size: contain;
+}
+
 .mast form input[type="text"] {
 	margin-top:280px;
 	text-align:center;
