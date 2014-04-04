@@ -10,9 +10,9 @@ def create
 
 #Validate the amount to ensure it fits in the safe range.
 @donation = params[:amount]
-if @donation < 300 then @donation = 300 
+if @donation.to_i < 300 then @donation = 300 
 end
-if @donation > 500 then @donation = 500
+if @donation.to_i > 500 then @donation = 500
 end
 
   customer = Stripe::Customer.create(
