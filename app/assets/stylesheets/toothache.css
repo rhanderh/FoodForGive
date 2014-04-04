@@ -116,7 +116,7 @@ div#main_content {
     font-size: 0.8em;
     padding: 0.2em;
     a:link {color:#FFFFFF};
-    a:hover {color:#F5A2C9} !important;
+    a:hover {color:#F5A2C9};
 }
 
 #donate_submit:hover
