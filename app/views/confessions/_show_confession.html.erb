@@ -18,7 +18,7 @@
       <span id="confess_submit">Give to ForGive!</span>
           
   <script>
-          	var handler = StripeCheckout.configure({
+    var handler = StripeCheckout.configure({
     key: "<%= Rails.configuration.stripe[:publishable_key] %>",
     image: 'assets/purplecherub12-u2852.png',
     token: function(token, args) {

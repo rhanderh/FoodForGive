@@ -22,7 +22,7 @@ end
 
   charge = Stripe::Charge.create(
     :customer    => customer.id,
-    :amount      => @donation,
+    :amount      => @donation.to_i,
     :description => 'Food for give donation',
     :currency    => 'usd'
   )
