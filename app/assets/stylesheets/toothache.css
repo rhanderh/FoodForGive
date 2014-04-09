@@ -10,10 +10,14 @@
 	This is the super-sweet cherub styling.  Swap this file out to change the theme down the road.	
 */
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300|Henny+Penny|Linden+Hill);
+@import url(http://fonts.googleapis.com/css?family=Bubblegum+Sans);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Henny+Penny);
 /* REFERENCE:
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Henny Penny', cursive;
 font-family: 'Linden Hill', serif;
+font-family: 'Bubblegum Sans', cursive;
 */
 /*body:after {
 	background:yellow;
@@ -33,12 +37,9 @@ font-family: 'Linden Hill', serif;
 	-ms-transform:rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
 }*/
-.html
-{
-	background: #7F7F7F url("../images/smallertile.jpg") repeat left top;
+.html {
+	background: #7F7F7F url('../images/smallertile.jpg') repeat left top;
 }
-
-
 div#outer_confessions {
     width: 80%;
     margin-left: auto;
@@ -48,31 +49,27 @@ div#outer_confessions {
     background: url('/assets/pink-background-radial.jpg');
     position:relative;
 }
-
 div#main_confessions {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 25px;
     padding: 10px;
     text-align:center;
-    font-family: bubblegum-sans, sans-serif;
+    font-family: 'Bubblegum Sans', cursive;
 	font-weight: 400;
 	font-size: 20px;
 }
-
 div#main_content {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 25px;
     padding: 10px;
     text-align:center;
-    font-family: linden-hill, sans-serif;
+    font-family: 'Linden Hill', serif;
 	font-weight: 400;
 	font-size: 20px;
 }
-
-#confess_line
-{
+#confess_line {
 	position: relative;
 	color:#662D91;
 	background-color: #FFFFFF;
@@ -83,117 +80,88 @@ div#main_content {
     padding: 0.6em;
     margin-bottom: 2em;
 }
-
-
-#confess_text_field
-{
+#confess_text_field {
 	z-index: 120;
 	font-size: 17px;
 	border:1px solid black;
-
-
 }
-
-#payment_text_field
-{
+#payment_text_field {
 	z-index: 120;
 	font-size: 17px;
 	border:1px solid black;
 	position: relative;
 	width: 100%;
-
 }
-
-#donate_submit
-{
+#donate_submit {
 	background-color: #EE0000;
 	color:#FFFFFF;
 	position: relative;
 	color:#662D91;
 	border: 0.2em solid #EE0000;
-	-moz-border-radius: 20px;
 	border-radius: 15px;
 	box-shadow: 4px 4px 2px #888888;
     font-size: 0.8em;
     padding: 0.2em;
-    a:link {color:#FFFFFF};
-    a:hover {color:#F5A2C9};
+    /*
+	RH: incorrect placement, but I dont know why these rules are here.  Keeping for reference but pending deletion.
+	a:link {color:#FFFFFF};
+    a:hover {color:#F5A2C9};*/
 }
-
-#donate_submit:hover
-{
-	
+#donate_submit:hover {
 	color:#F5A2C9;
 	background-color:#EE0000;
 	border:0.2em solid #FFFFFF;
-	-moz-border-radius: 15px;
     border-radius: 15px;
     font-size: 0.8em;
     padding: 0.2em;
+	/*
     a:link {color:#FFFFFF};
     a:hover {color:#F5A2C9};
+	*/
 }
-
-
-#confess_submit
-{
+#confess_submit {
 	position: relative;
 	color:#662D91;
 	background-color: #F5A2C9;
 	border: 0.2em solid #F5A2C9;
-	-moz-border-radius: 20px;
 	border-radius: 15px;
 	box-shadow: 4px 4px 2px #888888;
     font-size: 0.8em;
     padding: 0.2em;
+	/*
     a:link {color:#662D91}
     a:hover {color:#FFFFFF}
+	*/
 }
-
-
-
-#confess_submit:hover
-{
-	
+#confess_submit:hover {
 	color:#FFFFFF;
 	background-color:#F5A2C9;
 	border:0.2em solid #F5A2C9;
-	-moz-border-radius: 15px;
     border-radius: 15px;
     font-size: 0.8em;
     padding: 0.2em;
+	/*
     a:link {color:#662D91}
-    a:hover {color:#FFFFFF}
+    a:hover {color:#FFFFFF}*/
 }
-
-#pay_submit
-{
+#pay_submit {
 	color:#FFFFFF;
 	background-color: #EE0000;
 	border: 0.2em solid #EE0000;
-	-moz-border-radius: 20px;
 	border-radius: 15px;
 	box-shadow: 4px 4px 2px #888888;
     font-size: 0.8em;
     padding: 0.2em;
 }
-
-
-
-#pay_submit:hover
-{
-	
+#pay_submit:hover {
 	color:#FFFFFF;
 	background-color:#F5A2C9;
 	border:0.2em solid #F5A2C9;
-	-moz-border-radius: 15px;
-    border-radius: 15px;
+	border-radius: 15px;
     font-size: 0.8em;
     padding: 0.2em;
 }
-
-#payment-text
-{
+#payment-text {
 	background-color: transparent;
 	opacity: 0.85;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
@@ -202,78 +170,48 @@ div#main_content {
 	color: #662D91;
 	line-height: 23px;
 	font-size: 19px;
-	font-family: bubblegum-sans, sans-serif;
+	font-family: 'Bubblegum Sans', cursive;
 	font-weight: 400;
 }
-
-#stripe-button
-{
+#stripe-button {
 	z-index: 200;
 }
-
-#confess_submit:active
-{
-  box-shadow: 0px 0px 0px #888888;
+#confess_submit:active {
+	box-shadow: 0px 0px 0px #888888;
 }
-
-
-
-#magic-fail
-{
-
-	/*line-height: 23px;*/
+#magic-fail {
 	font-size: 23px;
-	font-family: bubblegum-sans, sans-serif;
+	font-family: 'Bubblegum Sans', cursive;
 	font-weight: 400;
 	color: #662D91;
 }
-
-#Random_Answer
-{
+#Random_Answer {
 	font-size: 28px;
 	line-height: 32px;
 }
-
-#tiny-response
-{
-
-	/*line-height: 23px;*/
+#tiny-response {
 	font-size: 18px;
-	font-family: bubblegum-sans, sans-serif;
+	font-family: 'Bubblegum Sans', cursive;
 	font-weight: 400;
 }
-#amount-response
-{
-
+#amount-response {
 	font-size: 19px;
-	font-family: linden-hill, sans-serif;
+	font-family: 'Linden Hill', serif;
 	color: #7F7F7F;
 	font-weight: 400;
 }
-
-
-
-#magic_response_inner
-{
-
-	padding-top:250px;
-	width:40%;
-	padding-right:30%;
-	padding-left:30%;
-	
-	
+#magic_response_inner {
+	padding-top: 250px;
+	width: 40%;
+	padding-right: 30%;
+	padding-left: 30%;
 }
-
-
-#magic-response
-{
-
+#magic-response {
 	font-size: 19px;
-	font-family: bubblegum-sans, sans-serif;
+	font-family: 'Bubblegum Sans', cursive;
 	color: #662D91;
 	font-weight: 400;
 }
-
 .cherub {
 	position:fixed;
 	z-index:1;
@@ -284,18 +222,15 @@ div#main_content {
 	width:350px;
 	left:12%;
 	top:180px;
-	/*border:3px dashed #FFF;*/
-	background: url('/assets/purplecherub12-u2852.png');
+	background: url('/assets/cherub1.png') no-repeat;
 }
 #cherub2 {
 	height:450px;
 	width:400px;
 	right:12%;
 	top:90px;
-	/*border:3px dashed #FFF;*/
-	background: url('/assets/cherub12-u2830.png')
+	background: url('/assets/cherub2.png') no-repeat;
 }
-
 h1 {
 	padding:30px 0 10px;
 	margin:0 auto;
@@ -317,21 +252,19 @@ h1 a {
 	color:#662D91;
 	float:left;
 }
-
 div a {
 	text-decoration:none;
 }
-
 h1 a:hover {
 	color:#F5A2C9;	
 }
 h1 a > span {
-	background:url(/assets/t_orn.png) no-repeat top center;
+	background:url('/assets/t_orn.png') no-repeat top center;
 	display:block;
 	padding:40px 0 0;
 }
 h1 a > span span {
-	background:url(/assets/b_orn.png) no-repeat bottom center;
+	background:url('/assets/b_orn.png') no-repeat bottom center;
 	display:block;
 	padding:0 0 26px;
 }
@@ -397,18 +330,15 @@ li
 	display:block;
 	position:relative;
 }
-
-#form_bg
-{
-background:url(/assets/placeSetting.png) no-repeat center;
-background-size: contain;
+#form_bg {
+	background:url('/assets/placeSetting.png') no-repeat center;
+	background-size: contain;
 }
-
 .mast form input[type="text"] {
 	margin-top:280px;
 	text-align:center;
 	width:330px;
-	font-family: bubblegum-sans, sans-serif;
+	font-family: 'Bubblegum Sans', cursive;
 }
 form input[type="submit"] {
 	clear:both;
@@ -424,7 +354,7 @@ form input[type="submit"] {
 	cursor:pointer;
 	box-shadow:5px 5px 5px rgba(0,0,0,.5);
 	border:1px solid #CCC;
-	font-family: bubblegum-sans, sans-serif;
+	font-family: 'Bubblegum Sans', cursive;
 }
 form input[type="submit"]:hover {
 	color:#FFF;
@@ -434,11 +364,11 @@ form input[type="submit"]:hover {
 	width:100%;
 }
 .layer.a {
-	background:url(/assets/t_lump.png) repeat-x top;
+	background:url('/assets/t_lump.png') repeat-x top;
 	padding-top:40px;
 }
 .layer.b {
-	background:url(/assets/b_lump.png) repeat-x bottom;
+	background:url('/assets/b_lump.png') repeat-x bottom;
 	padding-bottom:40px;
 }
 .layer.c {
@@ -460,7 +390,7 @@ form input[type="submit"]:hover {
 	text-align:center;
 }
 .info {
-	background:url(/assets/stripes.png);
+	background:url('/assets/stripes.png');
 	text-align:center;
 	font-family: 'Linden Hill', serif;
 	color:#7F7F7F;
@@ -468,7 +398,7 @@ form input[type="submit"]:hover {
 .aux {
 	font-family: 'Linden Hill', serif;
 	color:#7F7F7F;
-	background:url(/assets/pinkDaisies.png);
+	background:url('/assets/pinkDaisies.png');
 	padding:50px 0;
 }
 .aux form {
@@ -492,7 +422,7 @@ footer .social li {
 	display:block;
 	height:32px;
 	width:32px;
-	background:url(/assets/social.png) no-repeat;
+	background:url('/assets/social.png') no-repeat;
 }
 .mast .social {
 	right:0;
