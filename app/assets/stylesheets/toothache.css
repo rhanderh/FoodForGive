@@ -271,7 +271,7 @@ h1 .end {
 	width:30px;
 	height:100px;
 	display:block;
-	background:url(/assets/backing.png) no-repeat left top;
+	background:url('/assets/backing.png') no-repeat left top;
 	float:left;
 }
 .social span {
