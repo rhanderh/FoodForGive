@@ -379,8 +379,9 @@ form input[type="submit"]:hover {
 	border:	9px solid #d28bcf;
 	padding:1em;
 	position:relative;
+	display:block;
 }
-.doubleblock {
+.doubleblock:before {
 	background:none;
 	border:4px solid #d28bcf;
 	content:"";
