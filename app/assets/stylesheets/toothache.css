@@ -374,13 +374,13 @@ form input[type="submit"]:hover {
 	background:#f6f3ee;
 	padding:20px 0;
 }
-.layer.doubleblock {
+.doubleblock {
 	background:#FFF;
 	border:	9px solid #d28bcf;
 	padding:1em;
 	position:relative;
 }
-.layer.doubleblock {
+.doubleblock {
 	background:none;
 	border:4px solid #d28bcf;
 	content:"";
