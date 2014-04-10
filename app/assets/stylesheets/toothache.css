@@ -236,15 +236,15 @@ h1 {
 	text-align:center;
 	display:block;
 	font-family: 'Henny Penny', cursive;
-	font-size:2.5em;
-	width:450px;
+	font-size:2.3em;
+	width:380px;
 	clear:both;
 }
 h1 a {
 	text-decoration:none;
 	display:block;
 	margin:0 auto 0 30px;
-	width:350px;
+	width:280px;
 	border:2px solid #CCC;
 	background:#FFF;
 	padding:10px 0;
