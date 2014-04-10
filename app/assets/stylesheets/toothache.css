@@ -217,15 +217,15 @@ div#main_content {
 	background-color:rgba(0,0,0,.3);
 }
 #cherub1 {
-	height:400px;
-	width:350px;
+	height:300px;
+	width:258px;
 	left:12%;
 	top:180px;
 	background: url('/assets/cherub1.png') no-repeat;
 }
 #cherub2 {
-	height:450px;
-	width:400px;
+	height:322px;
+	width:237px;
 	right:12%;
 	top:90px;
 	background: url('/assets/cherub2.png') no-repeat;
