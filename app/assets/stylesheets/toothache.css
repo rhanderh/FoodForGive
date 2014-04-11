@@ -500,6 +500,7 @@ footer {
 	padding:15px 30px;
 	margin:0 auto;
 	display:block;
+	text-align:center;
 }
 .social li + li {
 	margin-left:10px;	
