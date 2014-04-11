@@ -231,20 +231,20 @@ div#main_content {
 	background: url('/assets/cherub2.png') no-repeat;
 }
 h1 {
-	padding:30px 0 0;
+	padding:20px 0 0;
 	margin:0 auto;
 	text-align:center;
 	display:block;
 	font-family: 'Henny Penny', cursive;
-	font-size:2em;
-	width:350px;
+	font-size:1.8em;
+	width:280px;
 	clear:both;
 }
 h1 a {
 	text-decoration:none;
 	display:block;
 	margin:0 auto 0 30px;
-	width:280px;
+	width:200px;
 	border:2px solid #CCC;
 	background:#FFF;
 	padding:10px 0;
@@ -260,18 +260,18 @@ h1 a:hover {
 h1 a > span {
 	background:url('/assets/t_orn.png') no-repeat top center;
 	display:block;
-	padding:20px 0 0;
+	padding:22px 0 0;
 }
 h1 a > span span {
 	background:url('/assets/b_orn.png') no-repeat bottom center;
 	display:block;
-	padding:0 0 15px;
+	padding:0 0 10px;
 }
 h1 .end {
-	width:30px;
-	height:100px;
+	width:40px;
+	height:90px;
 	display:block;
-	background:url('/assets/backing.png') no-repeat left top;
+	background:url('/assets/backing.png') no-repeat -10px -22px;
 	float:left;
 }
 .social span {
@@ -476,7 +476,7 @@ sup {
 	vertical-align:super;	
 }
 sub {
-	vertical-align: sub;	
+	vertical-align: inherit;	
 }
 .facebook {background-position:0 0 !important;}
 .twitter {background-position:-42px 0 !important;}
