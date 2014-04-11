@@ -479,7 +479,7 @@ footer {
 .social {
 	text-align:center;	
 }
-.aux .social li {
+.social li {
 	display:inline-block;
 }
 .social a {
@@ -491,13 +491,10 @@ footer {
 .mast .social {
 	margin-top:20px;
 }
-.mast .social li {
-	display:inline-block;	
-}
 .aux .social {
 	margin:20px 0 10px;	
 }
-.aux .social li + li {
+.social li + li {
 	margin-left:10px;	
 }
 footer div {
