@@ -495,7 +495,7 @@ footer {
 	margin:20px 0 10px;	
 }
 .aux h2 {
-	background:url('/assets/nameRibbon.png') no-repeat top center red;
+	background:url('/assets/nameRibbon.png') no-repeat top center;
 	width:352px;
 	padding:15px 30px;
 	margin:0 auto;
