@@ -448,12 +448,12 @@ form input[type="submit"]:hover {
 	font-family: 'Linden Hill', serif;
 	color:#7F7F7F;
 	background:url('/assets/patch.png');
-	padding:30px 0;
+	padding:20px 0;
 }
 .ornamentA {
 	height:20px;
 	background:url('/assets/dotWRibbon.png') repeat-x top center;
-	margin:20px 0;
+	margin:0 0 15px;
 }
 .aux form {
 	text-align:center;	
@@ -469,7 +469,7 @@ footer {
 .social {
 	text-align:center;	
 }
-footer .social li {
+.aux .social li {
 	display:inline-block;
 }
 .social a {
@@ -484,7 +484,7 @@ footer .social li {
 .mast .social li {
 	display:inline-block;	
 }
-footer .social li + li {
+.aux .social li + li {
 	margin-left:10px;	
 }
 footer div {
