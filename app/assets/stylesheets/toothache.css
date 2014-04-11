@@ -421,7 +421,7 @@ form input[type="submit"]:hover {
 .aux {
 	font-family: 'Linden Hill', serif;
 	color:#7F7F7F;
-	background:url('/assets/pinkDaisies.png');
+	background:url('/assets/patch.png');
 	padding:50px 0;
 }
 .aux form {
