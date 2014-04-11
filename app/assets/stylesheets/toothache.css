@@ -495,7 +495,7 @@ footer {
 	display:inline-block;	
 }
 .aux .social {
-	margin-top:20px;	
+	margin:20px 0 10px;	
 }
 .aux .social li + li {
 	margin-left:10px;	
