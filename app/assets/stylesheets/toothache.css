@@ -497,6 +497,9 @@ footer {
 .social li + li {
 	margin-left:10px;	
 }
+.info .social {
+	margin-top:15px;	
+}
 footer div {
 	width:43%;
 	float:left;
