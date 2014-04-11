@@ -455,6 +455,16 @@ form input[type="submit"]:hover {
 	background:url('/assets/dotWRibbon.png') repeat-x top center;
 	margin:0 0 15px;
 }
+.ornamentB {
+	height:20px;
+	background:url('/assets/ribbon.png') repeat-x top center;
+	margin:0 0 15px;
+}
+.ornamentC {
+	height:20px;
+	background:url('/assets/dot.png') repeat-x top center;
+	margin:0 0 15px;
+}
 .aux form {
 	text-align:center;	
 }
@@ -483,6 +493,9 @@ footer {
 }
 .mast .social li {
 	display:inline-block;	
+}
+.aux .social {
+	margin-top:20px;	
 }
 .aux .social li + li {
 	margin-left:10px;	
