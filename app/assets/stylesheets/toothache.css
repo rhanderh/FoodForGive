@@ -495,10 +495,11 @@ footer {
 	margin:20px 0 10px;	
 }
 .aux h2 {
-	background:url(../images/nameRibbon.png) no-repeat top center red;
+	background:url('/assets/nameRibbon.png') no-repeat top center red;
 	width:352px;
-	height:188px;
 	padding:15px 30px;
+	margin:0 auto;
+	display:block;
 }
 .social li + li {
 	margin-left:10px;	
