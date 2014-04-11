@@ -494,6 +494,12 @@ footer {
 .aux .social {
 	margin:20px 0 10px;	
 }
+.aux h2 {
+	background:url(../images/nameRibbon.png) no-repeat top center red;
+	width:352px;
+	height:188px;
+	padding:15px 30px;
+}
 .social li + li {
 	margin-left:10px;	
 }
