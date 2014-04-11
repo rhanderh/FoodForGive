@@ -279,7 +279,7 @@ h1 .end {
 }
 h2 {
 	font-family: 'Henny Penny',cursive;
-	font-size:1.5em;
+	font-size:1.8em;
 	color:#662D91;
 }
 footer h3 {
@@ -321,9 +321,12 @@ li {
 .mast form {
 	text-align:center;
 	margin:0 auto 30px;
-	height:600px;
+	height:570px;
 	display:block;
 	position:relative;
+}
+.jist {
+	font-size:1.6em;	
 }
 #form_bg {
 	background:url('/assets/placeSetting.png') no-repeat center;
@@ -370,6 +373,12 @@ form input[type="submit"]:hover {
 	background:#f6f3ee;
 	padding:20px 0;
 }
+.limiter.doubleblock { /* specifically targetting the 2nd panel */
+	width:740px;
+}
+.limiter.doubleblock .textParent {
+	width:68%;
+}
 .doubleblock {
 	background:#FFF;
 	border:	9px solid #d28bcf;
@@ -398,7 +407,7 @@ form input[type="submit"]:hover {
 }
 .info p, .aux p {
 	margin:20px 0;
-	line-height:1.3em;
+	line-height:1.5em;
 	color:#7F7F7F;
 	text-align:center;
 	font-size:1.3em;
