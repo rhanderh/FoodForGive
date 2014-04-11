@@ -24,8 +24,8 @@ body:after {
 	padding:5px;
 	color: #000;
 	bottom:40%;
-	font-size:14px;
-	content:"Undergoing maintenance.";
+	font-size:1.5em;
+	content:"Undergoing maintenance. Chill.";
 	display:block;
 	border-top: 3px dashed #000;
 	border-bottom: 3px dashed #000;
@@ -373,20 +373,46 @@ form input[type="submit"]:hover {
 	background:#f6f3ee;
 	padding:20px 0;
 }
-.limiter.doubleblock { /* specifically targetting the 2nd panel */
+/* specifically targetting the 2nd panel */
+.limiter.doubleblock1 { 
 	width:740px;
 }
-.limiter.doubleblock .textParent {
+.limiter.doubleblock1 .textParent {
 	width:68%;
 }
-.doubleblock {
+.doubleblock1 {
 	background:#FFF;
 	border:	9px solid #d28bcf;
 	padding:2em;
 	position:relative;
 	display:block;
 }
-.doubleblock:before {
+.doubleblock1:before {
+	background:none;
+	border:4px solid #d28bcf;
+	content:"";
+	display:block;
+	position:absolute;
+	top:4px;
+	bottom:4px;
+	left:4px;
+	right:4px;
+}
+/* specifically targetting the 3rd panel */
+.limiter.doubleblock2 { 
+	width:900px;
+}
+.limiter.doubleblock2 .textParent {
+	width:80%;
+}
+.doubleblock2 {
+	background:#FFF;
+	border:	9px solid #d28bcf;
+	padding:2em;
+	position:relative;
+	display:block;
+}
+.doubleblock2:before {
 	background:none;
 	border:4px solid #d28bcf;
 	content:"";
