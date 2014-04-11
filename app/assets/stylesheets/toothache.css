@@ -236,7 +236,7 @@ h1 {
 	text-align:center;
 	display:block;
 	font-family: 'Henny Penny', cursive;
-	font-size:2.3em;
+	font-size:2em;
 	width:350px;
 	clear:both;
 }
@@ -260,12 +260,12 @@ h1 a:hover {
 h1 a > span {
 	background:url('/assets/t_orn.png') no-repeat top center;
 	display:block;
-	padding:40px 0 0;
+	padding:20px 0 0;
 }
 h1 a > span span {
 	background:url('/assets/b_orn.png') no-repeat bottom center;
 	display:block;
-	padding:0 0 26px;
+	padding:0 0 15px;
 }
 h1 .end {
 	width:30px;
