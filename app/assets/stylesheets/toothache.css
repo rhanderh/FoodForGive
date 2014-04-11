@@ -18,14 +18,14 @@ font-family: 'Henny Penny', cursive;
 font-family: 'Linden Hill', serif;
 font-family: 'Bubblegum Sans', cursive;
 */
-/*body:after {
+body:after {
 	background:yellow;
 	position:absolute;
 	padding:5px;
 	color: #000;
 	bottom:40%;
 	font-size:14px;
-	content:"This is a work in progress.  Don't judge me yet.  ^^;";
+	content:"Undergoing maintenance.";
 	display:block;
 	border-top: 3px dashed #000;
 	border-bottom: 3px dashed #000;
@@ -35,7 +35,7 @@ font-family: 'Bubblegum Sans', cursive;
 	transform:rotate(-7deg);
 	-ms-transform:rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
-}*/
+}
 .html {
 	background: #7F7F7F url('../images/smallertile.jpg') repeat left top;
 }
@@ -326,7 +326,7 @@ li {
 	position:relative;
 }
 .jist {
-	font-size:1.6em;	
+	font-size:1.6em !important;	
 }
 #form_bg {
 	background:url('/assets/placeSetting.png') no-repeat center;
