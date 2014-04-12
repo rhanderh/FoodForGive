@@ -39,7 +39,7 @@
 	     <div id="confess_field" class="field"> <%= f.text_field :confession_text, 	     						
 
 	     						:value => "", 
-	     						:placeholder => "Please enter a food confession...",
+	     						:placeholder => "Please type your food confession here...",
 	     						:style => "text-align: Center",
 	     						:id => "confess_text_field"  %> </div>
 	     <br>
@@ -112,7 +112,7 @@
             <p>Because giving is forgiving, Food ForGive hopes to partner with a food bank so that you can have the option of donating a few dollars after your confession. Let's keep in touch because we want you to help us celebrate when that happens &ndash; and no, we're not going to give away your private info because that's no fun at all. Two snaps and a hey. See you soon!</p>
            
                <%=render '/payments/form', :@payment => Payment.new %>
-<Br>
+<br>
 
 <div id="payment-text">	
 <div id="payment-response">

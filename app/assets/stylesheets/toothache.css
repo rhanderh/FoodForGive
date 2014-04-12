@@ -88,6 +88,7 @@ div#main_content {
 	-moz-box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
 	box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
 	width:330px;
+	font-family: 'Bubblegum Sans',cursive;
 }
 #donate_submit {
 	background-color: #EE0000;
