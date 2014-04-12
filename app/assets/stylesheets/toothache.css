@@ -464,7 +464,7 @@ footer {
 .aux .social {
 	margin:20px 0 10px;	
 }
-.aux h2 {
+.aux h2, .info h2 {
 	background:url('/assets/nameRibbon.png') no-repeat top center;
 	width:352px;
 	padding:20px 30px;
@@ -489,7 +489,7 @@ footer p {
 	line-height:1.3em;
 	font-family:Verdana, Geneva, sans-serif;
 }
-br.clear {
+br.clear, br {
 	clear:both;
 	height:0;
 	visibility:hidden;
