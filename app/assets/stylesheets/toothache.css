@@ -72,8 +72,7 @@ div#main_content {
 	position: relative;
 	color:#662D91;
 	background-color: #FFFFFF;
-	border: 0.2em solid #FFFFFF;
-	-moz-border-radius: 20px;
+	border: 1px solid #FFFFFF;
 	border-radius: 15px;
 	box-shadow: 4px 4px 2px #888888;
     padding: 0.6em;
@@ -101,58 +100,33 @@ div#main_content {
 	color:#FFFFFF;
 	position: relative;
 	color:#662D91;
-	border: 0.2em solid #EE0000;
-	border-radius: 15px;
+	border: 1px solid #EE0000;
+	border-radius: 7px;
 	box-shadow: 4px 4px 2px #888888;
     font-size: 0.8em;
     padding: 0.2em;
-    /*
-	RH: incorrect placement, but I dont know why these rules are here.  Keeping for reference but pending deletion.
-	a:link {color:#FFFFFF};
-    a:hover {color:#F5A2C9};*/
 }
 #donate_submit:hover {
 	color:#F5A2C9;
-	background-color:#EE0000;
-	border:0.2em solid #FFFFFF;
-    border-radius: 15px;
-    font-size: 0.8em;
-    padding: 0.2em;
-	/*
-    a:link {color:#FFFFFF};
-    a:hover {color:#F5A2C9};
-	*/
 }
 #confess_submit {
 	position: relative;
 	color:#662D91;
 	background-color: #F5A2C9;
-	border: 0.2em solid #F5A2C9;
-	border-radius: 15px;
+	border: 1px solid #F5A2C9;
+	border-radius: 7px;
 	box-shadow: 4px 4px 2px #888888;
     font-size: 0.8em;
     padding: 0.2em;
-	/*
-    a:link {color:#662D91}
-    a:hover {color:#FFFFFF}
-	*/
 }
 #confess_submit:hover {
 	color:#FFFFFF;
-	background-color:#F5A2C9;
-	border:0.2em solid #F5A2C9;
-    border-radius: 15px;
-    font-size: 0.8em;
-    padding: 0.2em;
-	/*
-    a:link {color:#662D91}
-    a:hover {color:#FFFFFF}*/
 }
 #pay_submit {
 	color:#FFFFFF;
 	background-color: #EE0000;
-	border: 0.2em solid #EE0000;
-	border-radius: 15px;
+	border: 1px solid #EE0000;
+	border-radius: 7px;
 	box-shadow: 4px 4px 2px #888888;
     font-size: 0.8em;
     padding: 0.2em;
@@ -160,10 +134,6 @@ div#main_content {
 #pay_submit:hover {
 	color:#FFFFFF;
 	background-color:#F5A2C9;
-	border:0.2em solid #F5A2C9;
-	border-radius: 15px;
-    font-size: 0.8em;
-    padding: 0.2em;
 }
 #payment-text {
 	background-color: transparent;
