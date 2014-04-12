@@ -485,6 +485,18 @@ footer {
 	display:block;
 	background:url('/assets/daisy-u2924.png') no-repeat top left;
 }
+.TR {
+	display:block;
+	background:url('/assets/daisy-u2924.png') no-repeat top right;
+}
+.BR {
+	display:block;
+	background:url('/assets/daisy-u2924.png') no-repeat bottom right;
+}
+.BL {
+	display:block;
+	background:url('/assets/daisy-u2924.png') no-repeat bottom left;
+}
 .social li + li {
 	margin-left:10px;	
 }
