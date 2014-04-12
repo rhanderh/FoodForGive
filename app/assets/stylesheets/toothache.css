@@ -481,7 +481,10 @@ footer {
 .info h2 {
 	line-height:55px;
 }
-.TL {background:red;}
+.TL {
+	display:block;
+	background:url('/assets/daisy-u2924.png') no-repeat top left;
+}
 .social li + li {
 	margin-left:10px;	
 }
