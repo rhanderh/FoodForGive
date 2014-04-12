@@ -78,7 +78,7 @@ div#main_content {
     padding: 0.6em;
     margin-bottom: 2em;
 }
-#confess_text_field {
+#confess_text_field, #payment_text_field {
 	z-index: 120;
 	font-size: 17px;
 	border:1px solid #808285;
@@ -87,13 +87,7 @@ div#main_content {
 	-webkit-box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
 	-moz-box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
 	box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
-}
-#payment_text_field {
-	z-index: 120;
-	font-size: 17px;
-	border:1px solid black;
-	position: relative;
-	width: 100%;
+	width:330px;
 }
 #donate_submit {
 	background-color: #EE0000;
