@@ -435,6 +435,11 @@ form input[type="submit"]:hover {
 	background:url('/assets/dot.png') repeat-x top center;
 	margin:0 0 15px;
 }
+.ornamentD {
+	height:20px;
+	background:url('/assets/dot.png') repeat-x top center;
+	margin:0 0 15px;
+}
 .aux form {
 	text-align:center;	
 }
@@ -472,6 +477,9 @@ footer {
 	margin:0 auto;
 	display:block;
 	text-align:center;
+}
+.info h2 {
+	line-height:55px;
 }
 .social li + li {
 	margin-left:10px;	
