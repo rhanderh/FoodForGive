@@ -82,7 +82,12 @@ div#main_content {
 #confess_text_field {
 	z-index: 120;
 	font-size: 17px;
-	border:1px solid black;
+	border:1px solid #808285;
+	border-radius:5px;
+	padding:10px 0;
+	-webkit-box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
+	-moz-box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
+	box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
 }
 #payment_text_field {
 	z-index: 120;
