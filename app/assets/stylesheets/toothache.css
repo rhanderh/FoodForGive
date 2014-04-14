@@ -39,6 +39,9 @@ body:after {
 .wrapper {
 	width:1024px;
 	margin:20px;
+	margin:0 auto;
+	box-shadow: -1px 18px 28px 0px rgba(0,0,0,0.75);
+	border:2px solid #F7ACCE;
 }
 .html {
 	background: #7F7F7F url('../images/smallertile.jpg') repeat left top;
