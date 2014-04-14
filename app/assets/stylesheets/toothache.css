@@ -43,7 +43,7 @@ font-family: 'Bubblegum Sans', cursive;
 	border:2px solid #D28BCF;
 }
 .html {
-	background: #7F7F7F url('../images/smallertile.jpg') repeat left top;
+	background: #7F7F7F url('/assegts/yellowTile.png') repeat left top;
 }
 div#outer_confessions {
     width: 80%;
@@ -489,19 +489,19 @@ footer {
 }
 .TL {
 	display:block;
-	background:url('/assets/daisy-u2924.png') no-repeat top left;
+	background:url('/assets/daisy.png') no-repeat top left;
 }
 .TR {
 	display:block;
-	background:url('/assets/daisy-u2924.png') no-repeat top right;
+	background:url('/assets/daisy.png') no-repeat top right;
 }
 .BR {
 	display:block;
-	background:url('/assets/daisy-u2924.png') no-repeat bottom right;
+	background:url('/assets/daisy.png') no-repeat bottom right;
 }
 .BL {
 	display:block;
-	background:url('/assets/daisy-u2924.png') no-repeat bottom left;
+	background:url('/assets/daisy.png') no-repeat bottom left;
 }
 .social li + li {
 	margin-left:10px;	
