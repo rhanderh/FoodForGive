@@ -36,6 +36,10 @@ body:after {
 	-ms-transform:rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
 }
+.wrapper {
+	width:1024px;
+	margin:20px;
+}
 .html {
 	background: #7F7F7F url('../images/smallertile.jpg') repeat left top;
 }
