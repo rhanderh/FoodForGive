@@ -448,6 +448,8 @@ form input[type="submit"]:hover {
 	height:20px;
 	background:url('/assets/dot.png') repeat-x top center;
 	margin:0 0 15px;
+	width:100%;
+	display:block;
 }
 .aux form {
 	text-align:center;	
