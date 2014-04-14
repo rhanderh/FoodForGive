@@ -18,7 +18,7 @@ font-family: 'Henny Penny', cursive;
 font-family: 'Linden Hill', serif;
 font-family: 'Bubblegum Sans', cursive;
 */
-body:after {
+/*body:after {
 	background:yellow;
 	position:absolute;
 	padding:5px;
@@ -35,7 +35,7 @@ body:after {
 	transform:rotate(-7deg);
 	-ms-transform:rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
-}
+}*/
 .wrapper {
 	width:1024px;
 	margin:20px auto;
