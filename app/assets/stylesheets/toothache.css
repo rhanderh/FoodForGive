@@ -43,7 +43,7 @@ font-family: 'Bubblegum Sans', cursive;
 	border:2px solid #D28BCF;
 }
 .html {
-	background: #7F7F7F url('/assegts/yellowTile.png') repeat left top;
+	background: #7F7F7F url('/assets/yellowTile.png') repeat left top;
 }
 div#outer_confessions {
     width: 80%;
