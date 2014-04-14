@@ -447,7 +447,8 @@ form input[type="submit"]:hover {
 .ornamentD {
 	height:20px;
 	background:url('/assets/yellowTile.png') repeat-x top center;
-	margin:0 0 15px;
+	margin:15px;
+	min-height:20px;
 	width:100%;
 	display:block;
 	padding:0;
