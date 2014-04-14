@@ -252,6 +252,9 @@ h2 {
 	font-size:1.8em;
 	color:#662D91;
 }
+h2 span {
+	font-size:.8em;
+}
 footer h3 {
 	text-align:center;
 	margin:10px 0;
