@@ -131,6 +131,7 @@ div#main_content {
 	box-shadow: 4px 4px 2px #888888;
     font-size: 0.8em;
     padding: 0.2em;
+	cursor:pointer;
 }
 #pay_submit:hover {
 	color:#FFFFFF;
@@ -170,13 +171,14 @@ div#main_content {
 	font-weight: 400;
 }
 #amount-response {
-	font-size: 19px;
+	font-size: 1em;
 	font-family: 'Linden Hill', serif;
 	color: #7F7F7F;
 	font-weight: 400;
+	margin:10px 0;
 }
 #magic_response_inner {
-	padding-top: 250px;
+	padding-top: 230px;
 	width: 40%;
 	padding-right: 30%;
 	padding-left: 30%;
