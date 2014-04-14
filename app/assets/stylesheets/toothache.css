@@ -353,9 +353,9 @@ form input[type="submit"]:hover {
 	padding:20px 0;
 }
 /* specifically targetting the 2nd panel */
-.limiter.doubleblock1 { 
+/*.limiter.doubleblock1 { RH: not needed since wrapper introduced 4.14.14
 	width:740px;
-}
+}*/
 .limiter.doubleblock1 .textParent {
 	width:68%;
 }
@@ -378,9 +378,9 @@ form input[type="submit"]:hover {
 	right:4px;
 }
 /* specifically targetting the 3rd panel */
-.limiter.doubleblock2 { 
+/*.limiter.doubleblock2 { RH: not needed since wrapper introduced 4.14.14
 	width:900px;
-}
+}*/
 .limiter.doubleblock2 .textParent {
 	width:80%;
 }
@@ -546,7 +546,7 @@ sub {
 .google {background-position:-126px 0 !important;}
 .youtube {background-position:-168px 0 !important;}
 .limiter {
-	width:1024px;
+	width:85%;
 	display:block;
 	margin:0 auto;
 }
