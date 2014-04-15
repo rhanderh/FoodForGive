@@ -39,12 +39,9 @@ font-family: 'Bubblegum Sans', cursive;
 
 
 /*iPhone 2G-4S L*/
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) 
-and (orientation : landscape) {
-	
-	}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+	body {background:red;}	/* testing */
+}
 .wrapper {
 	width:1024px;
 	margin:20px auto;
