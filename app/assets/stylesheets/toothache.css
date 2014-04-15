@@ -36,12 +36,12 @@ font-family: 'Bubblegum Sans', cursive;
 	-ms-transform:rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
 }*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (min-device-height: 480px) {
 	p {
 		font-size:2em !important;
 	}	
 }
-@media only screen and (min-device-width: 480px) and (max-device-width: 320px) {
+@media only screen and (min-device-width: 480px) and (min-device-height: 320px) {
 	p {
 		font-size:2em !important;
 	}	
