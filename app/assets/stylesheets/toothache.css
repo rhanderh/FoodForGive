@@ -36,6 +36,15 @@ font-family: 'Bubblegum Sans', cursive;
 	-ms-transform:rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
 }*/
+
+
+/*iPhone 2G-4S L*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) {
+	
+	}
 .wrapper {
 	width:1024px;
 	margin:20px auto;
