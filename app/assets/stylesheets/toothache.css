@@ -36,16 +36,14 @@ font-family: 'Bubblegum Sans', cursive;
 	-ms-transform:rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
 }*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	p {
 		font-size:2em !important;
-		color:red !important;
 	}	
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 320px) {
 	p {
 		font-size:2em !important;
-		color:orange !important;
 	}	
 }
 .wrapper {
