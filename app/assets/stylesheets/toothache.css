@@ -36,6 +36,11 @@ font-family: 'Bubblegum Sans', cursive;
 	-ms-transform:rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
 }*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+	p {
+		color:red;
+	}	
+}
 .wrapper {
 	width:1024px;
 	margin:20px auto;
