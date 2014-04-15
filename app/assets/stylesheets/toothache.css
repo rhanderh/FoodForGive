@@ -38,7 +38,7 @@ font-family: 'Bubblegum Sans', cursive;
 }*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
 	p {
-		color:red !important;
+		font-size:2em;
 	}	
 }
 .wrapper {
