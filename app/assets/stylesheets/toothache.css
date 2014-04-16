@@ -18,7 +18,7 @@ font-family: 'Henny Penny', cursive;
 font-family: 'Linden Hill', serif;
 font-family: 'Bubblegum Sans', cursive;
 */
-body:after {
+/*body:after {
 	background:yellow;
 	position:absolute;
 	padding:5px;
@@ -35,9 +35,15 @@ body:after {
 	transform:rotate(-7deg);
 	-ms-transform:rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
+}*/
+.wrapper {
+	width:1024px;
+	margin:20px auto;
+	box-shadow: -1px 18px 28px 0px rgba(0,0,0,0.75);
+	border:2px solid #D28BCF;
 }
 .html {
-	background: #7F7F7F url('../images/smallertile.jpg') repeat left top;
+	background: #7F7F7F url('/assets/yellowTile.png') repeat left top;
 }
 div#outer_confessions {
     width: 80%;
@@ -125,6 +131,7 @@ div#main_content {
 	box-shadow: 4px 4px 2px #888888;
     font-size: 0.8em;
     padding: 0.2em;
+	cursor:pointer;
 }
 #pay_submit:hover {
 	color:#FFFFFF;
@@ -164,13 +171,14 @@ div#main_content {
 	font-weight: 400;
 }
 #amount-response {
-	font-size: 19px;
+	font-size: 1em;
 	font-family: 'Linden Hill', serif;
 	color: #7F7F7F;
 	font-weight: 400;
+	margin:10px 0;
 }
 #magic_response_inner {
-	padding-top: 250px;
+	padding-top: 230px;
 	width: 40%;
 	padding-right: 30%;
 	padding-left: 30%;
@@ -252,6 +260,9 @@ h2 {
 	font-size:1.8em;
 	color:#662D91;
 }
+h2 span {
+	font-size:.75em;
+}
 footer h3 {
 	text-align:center;
 	margin:10px 0;
@@ -299,7 +310,7 @@ li {
 	font-size:1.6em !important;	
 }
 #form_bg {
-	background:url('/assets/placeSetting.png') no-repeat center;
+	background:url('/assets/placeSetting2.png') no-repeat center;
 	background-size: contain;
 }
 .mast form input[type="text"] {
@@ -344,9 +355,9 @@ form input[type="submit"]:hover {
 	padding:20px 0;
 }
 /* specifically targetting the 2nd panel */
-.limiter.doubleblock1 { 
+/*.limiter.doubleblock1 { RH: not needed since wrapper introduced 4.14.14
 	width:740px;
-}
+}*/
 .limiter.doubleblock1 .textParent {
 	width:68%;
 }
@@ -369,9 +380,9 @@ form input[type="submit"]:hover {
 	right:4px;
 }
 /* specifically targetting the 3rd panel */
-.limiter.doubleblock2 { 
+/*.limiter.doubleblock2 { RH: not needed since wrapper introduced 4.14.14
 	width:900px;
-}
+}*/
 .limiter.doubleblock2 .textParent {
 	width:80%;
 }
@@ -436,9 +447,12 @@ form input[type="submit"]:hover {
 	margin:0 0 15px;
 }
 .ornamentD {
-	height:20px;
-	background:url('/assets/dot.png') repeat-x top center;
-	margin:0 0 15px;
+	background:url('/assets/yellowTile_20.png') repeat top center;
+	margin:15px 0;
+	min-height:40px;
+	width:100%;
+	display:block;
+	padding:0;
 }
 .aux form {
 	text-align:center;	
@@ -478,24 +492,21 @@ footer {
 	display:block;
 	text-align:center;
 }
-.info h2 {
-	line-height:55px;
-}
 .TL {
 	display:block;
-	background:url('/assets/daisy-u2924.png') no-repeat top left;
+	background:url('/assets/daisy.png') no-repeat top left;
 }
 .TR {
 	display:block;
-	background:url('/assets/daisy-u2924.png') no-repeat top right;
+	background:url('/assets/daisy.png') no-repeat top right;
 }
 .BR {
 	display:block;
-	background:url('/assets/daisy-u2924.png') no-repeat bottom right;
+	background:url('/assets/daisy.png') no-repeat bottom right;
 }
 .BL {
 	display:block;
-	background:url('/assets/daisy-u2924.png') no-repeat bottom left;
+	background:url('/assets/daisy.png') no-repeat bottom left;
 }
 .social li + li {
 	margin-left:10px;	
@@ -540,7 +551,7 @@ sub {
 .google {background-position:-126px 0 !important;}
 .youtube {background-position:-168px 0 !important;}
 .limiter {
-	width:1024px;
+	width:85%;
 	display:block;
 	margin:0 auto;
 }
