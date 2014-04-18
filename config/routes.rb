@@ -1,13 +1,20 @@
 FoodForGive::Application.routes.draw do
-  resources :payments
-  resources :charges
-  resources :confessions
+  #resources :payments
+  #resources :charges
+  #resources :confessions
+  
+  root :to => 'confessions#new'
+  get 'confessions' => 'confessions#index'
+  get 'confessions/new' => 'confessions#new'
+  post 'confessions' => 'confessions#create'
+  post 'payments' => 'payments#create'
+  post 'charges' => 'charges#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root :to => 'confessions#new'
+ 
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

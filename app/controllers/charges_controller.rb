@@ -2,7 +2,7 @@ class ChargesController < ApplicationController
 #before_filter :check_for_mobile
 respond_to :html,:js, :json
 
-  def new
+def new
 end
 
 def create
@@ -27,8 +27,10 @@ end
     :currency    => 'usd'
   )
 
- # redirect_to new_confession_path
-    
+respond_to do |format|
+  format.js 
+end
+
  rescue Stripe::CardError => e
       # The card has been declined or
       # some other error has occured

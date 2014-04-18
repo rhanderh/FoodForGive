@@ -1,0 +1,16 @@
+if($('#confess_text_field').val() ==  "") {
+   $('#magic-fail').html("<p>Please enter at least one thing!</p>");
+   }
+else{
+$('#magic-fail').html("");
+var responses = new Array();
+responses[0] = "Thanks, you're a doll!";
+responses[1] = "Feel good!  You have helped another.";
+responses[2] = "What a kind donation, thank you.";
+
+
+$('#magic-response').html("");
+$('#magic-response').append("<%= escape_javascript(render(:partial => 'confessions/thankyou')).html_safe %>");
+$('#Random_Answer').append(responses[Math.floor(Math.random()*responses.length)]);
+
+

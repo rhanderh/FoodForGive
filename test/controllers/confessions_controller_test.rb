@@ -14,24 +14,26 @@ class ConfessionsControllerTest < ActionController::TestCase
   test "should get new" do
     get :new
     assert_response :success
+    assert_redirected_to root_path
   end
 
   test "should create confession" do
     assert_difference('Confession.count') do
       post :create, confession: { confession_text: @confession.confession_text }
     end
-
     assert_redirected_to confession_path(assigns(:confession))
   end
 
   test "should show confession" do
     get :show, id: @confession
     assert_response :success
+    assert_redirected_to root_path
   end
 
   test "should get edit" do
     get :edit, id: @confession
     assert_response :success
+    assert_rediricted_to confessions_path
   end
 
   test "should update confession" do
@@ -43,7 +45,6 @@ class ConfessionsControllerTest < ActionController::TestCase
     assert_difference('Confession.count', -1) do
       delete :destroy, id: @confession
     end
-
     assert_redirected_to confessions_path
   end
 end
