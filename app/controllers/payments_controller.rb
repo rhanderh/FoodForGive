@@ -15,7 +15,7 @@ class PaymentsController < ApplicationController
       if @payment.save
         #Set session value to indicate successful email sharing
         session[:ipayed] = 1
-        puts session[:ipayed]
+        
         format.js
         #format.html { redirect_to @payment, notice: 'Payment was successfully created.' }
        # format.json { render action: 'show', status: :created, location: @payment }
