@@ -28,6 +28,9 @@ end
   )
 
 respond_to do |format|
+  #Set flag to allow view of confessions on successful post
+  session[:ipayed] = 1
+  #Display the thank you message
   format.js 
 end
 

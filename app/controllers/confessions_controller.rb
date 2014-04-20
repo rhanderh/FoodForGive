@@ -1,6 +1,7 @@
 class ConfessionsController < ApplicationController
   #before_filter :check_for_mobile
   before_action :set_confession, only: [:show, :edit, :update, :destroy]
+  before_action :check_if_ipayed, only: [:index]
   respond_to :html, :js, :json
  
   # you can disable csrf protection on controller-by-controller basis:
@@ -50,5 +51,20 @@ class ConfessionsController < ApplicationController
     def confession_params
       params.require(:confession).permit(:confession_text)
     end
+    
+    def check_if_ipayed
+    @ipayed_val = session[:ipayed]
+    puts @ipayed_val
+
+      if @ipayed_val == 1
+        return true
+      else 
+        redirect_to root_path
+        return false
+      end
+    end
+    
+
+    
 end
 
