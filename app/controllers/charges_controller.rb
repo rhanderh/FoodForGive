@@ -27,11 +27,12 @@ end
     :currency    => 'usd'
   )
 
-  session[:ipayed] = 1
+
   
 respond_to do |format|
   #Set flag to allow view of confessions on successful post
-
+  session[:ipayed] = 1
+  puts session[:ipayed]
   #Display the thank you message
   format.js 
 end
