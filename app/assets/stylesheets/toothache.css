@@ -194,16 +194,16 @@ div#main_content {
 	background-color:rgba(0,0,0,.3);
 }
 #cherub1 {
-	height:480px;
-	width:353px;
-	left:15%;
+	height:384px;
+	width:282px;
+	left:20%;
 	top:180px;
 	background: url('/assets/cherub1_lg.png') no-repeat;
 }
 #cherub2 {
-	height:480px;
-	width:353px;
-	right:15%;
+	height:384px;
+	width:282px;
+	right:20%;
 	top:90px;
 	background: url('/assets/cherub2_lg.png') no-repeat;
 }
