@@ -54,8 +54,8 @@ div#outer_confessions {
     position:relative;
 }
 div#main_confessions {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 7%;
+    margin-right: 7%;
     margin-top: 25px;
     padding: 10px;
     text-align:center;
@@ -207,6 +207,26 @@ div#main_content {
 	top:90px;
 	background: url('/assets/cherub2_lg.png') no-repeat;
 }
+
+
+.about_cherub_1
+{
+	height:192px;
+	width:141px;
+	left: 1%;
+	z-index: 200;
+	position:absolute;
+}
+
+.about_cherub_2
+{
+	height:192px;
+	width:141px;
+	right: 1%;
+	z-index: 200;
+	position:absolute;
+}
+
 h1 {
 	padding:20px 0 0;
 	margin:0 auto;
@@ -231,6 +251,67 @@ h1 a {
 div a {
 	text-decoration:none;
 }
+
+div .about_row
+{
+	height: 15em;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+div .about_column_outer_right
+{
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+
+div .about_column_outer_left
+{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.about_column
+{
+	width: 80%;
+	height: 100%;
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 4px 4px 2px #888888;
+    padding: 0.6em;
+    margin-bottom: 2em;	
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_column p
+{
+	line-height:1.5em;
+	color:#7F7F7F;
+	text-align:center;
+	font-size:0.8em;
+	font-family: 'Linden Hill', serif;
+}
+
+.about_column h5
+{
+	line-height:1.5em;
+	color:#000000;
+	text-align:center;
+	font-size:0.8em;
+	font-family: 'Linden Hill', serif;
+}
+
+.about_column img
+{
+	height: 125px;
+	width: 100px;
+}
+
 h1 a:hover {
 	color:#F5A2C9;	
 }

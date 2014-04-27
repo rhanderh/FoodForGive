@@ -1,4 +1,5 @@
 FoodForGive::Application.routes.draw do
+  get "about/index"
   #resources :payments
   #resources :charges
   #resources :confessions
@@ -9,6 +10,7 @@ FoodForGive::Application.routes.draw do
   post 'confessions' => 'confessions#create'
   post 'payments' => 'payments#create'
   post 'charges' => 'charges#create'
+  get 'about' => 'about#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
