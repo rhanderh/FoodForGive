@@ -226,7 +226,7 @@ div#main_content {
 	right: 1%;
 	z-index: 200;
 	position:absolute;
-	background: "/assets/cherub2_lg.png"
+	background: "/assets/cherub2_lg.png";
 }
 
 h1 {
@@ -269,7 +269,7 @@ div .about_column_outer_left
 {
 	width: 50%;
 	float: left;
-	margin-top: 20%
+	margin-top: 20%;
 	margin-bottom: 20%;
 	padding-top: 4%;
 }
