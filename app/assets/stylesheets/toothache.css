@@ -46,7 +46,7 @@ font-family: 'Bubblegum Sans', cursive;
 	background: #7F7F7F url('/assets/yellowTile.png') repeat left top;
 }
 div#outer_confessions {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-top:25px;
@@ -216,6 +216,7 @@ div#main_content {
 	left: 1%;
 	z-index: 200;
 	position:absolute;
+	backgound:"/assets/cherub1_lg.png";
 }
 
 .about_cherub_2
@@ -225,6 +226,7 @@ div#main_content {
 	right: 1%;
 	z-index: 200;
 	position:absolute;
+	background: "/assets/cherub2_lg.png"
 }
 
 h1 {
@@ -252,40 +254,38 @@ div a {
 	text-decoration:none;
 }
 
-div .about_row
-{
-	height: 15em;
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
 
 div .about_column_outer_right
 {
 	width: 50%;
-	height: 100%;
 	float: right;
+	margin-top: 20%
+	margin-bottom: 20%;
+	padding-top: 4%;
 }
 
 
 div .about_column_outer_left
 {
 	width: 50%;
-	height: 100%;
 	float: left;
+	margin-top: 20%
+	margin-bottom: 20%;
+	padding-top: 4%;
 }
 
 .about_column
 {
 	width: 80%;
-	height: 100%;
+	height: 17em;
 	background-color: #FFFFFF;
 	border: 1px solid #FFFFFF;
 	border-radius: 15px;
 	box-shadow: 4px 4px 2px #888888;
     padding: 0.6em;
-    margin-bottom: 2em;	
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .about_column p
@@ -308,8 +308,8 @@ div .about_column_outer_left
 
 .about_column img
 {
-	height: 125px;
-	width: 100px;
+	height: 150px;
+	width: 115px;
 }
 
 h1 a:hover {
@@ -349,6 +349,9 @@ footer h3 {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size:3em;
 	color:#662D91;
+}
+footer a{
+		text-decoration:none;
 }
 h4 {
 	text-transform:uppercase;
@@ -637,5 +640,32 @@ sub {
 	margin:0 auto;
 }
 	
+/*Mobile */
+@media screen and (max-width: 950px){
+	
+	.about_column_outer_left,
+	.about_column_outer_right
+	{
+		width: 100% !important;
+		height: 100% !important;
+		float: none;
+		clear: both;
+		position: relative;
+	}
+	
+
+	.about_cherub_1,
+	.about_cherub_2
+	{
+		height:1px;
+		width:1px;
+	}
+	
+	.about_column{
+		height: 100% !important;
+	}
+
+	
+}
 	
 	
