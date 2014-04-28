@@ -259,8 +259,6 @@ div .about_column_outer_right
 {
 	width: 50%;
 	float: right;
-	margin-top: 20%;
-	margin-bottom: 20%;
 	padding-top: 4%;
 }
 
@@ -269,8 +267,6 @@ div .about_column_outer_left
 {
 	width: 50%;
 	float: left;
-	margin-top: 20%;
-	margin-bottom: 20%;
 	padding-top: 4%;
 }
 
