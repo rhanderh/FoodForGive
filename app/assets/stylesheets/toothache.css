@@ -339,6 +339,8 @@ h2 {
 h2 span {
 	font-size:.75em;
 	font-family: 'Bubblegum Sans', cursive;
+	display:block;
+	margin-bottom:5px;
 }
 footer h3 {
 	text-align:center;
@@ -570,8 +572,8 @@ footer {
 .aux h2, .info h2 {
 	background:url('/assets/nameRibbon.png') no-repeat top center;
 	width:352px;
-	padding:20px 30px;
-	height:55px;
+	padding:14px 30px 20px 30px;
+	height:63px;
 	margin:0 auto;
 	display:block;
 	text-align:center;
