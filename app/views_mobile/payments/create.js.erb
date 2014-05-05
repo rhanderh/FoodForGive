@@ -11,8 +11,8 @@
   	$('#payment-response').html("<p>Really?  Please try a legit e-mail...</p>");
   }
   else {
-    $('#payment-response').html("<p>Thank you, we will be in touch shortly!</p><br>");
-	$('#payment-response').append("<%= escape_javascript(link_to 'See what others have confessed...', confessions_path, :id => "confess_submit_m")  %>");
+    $('#payment-response').html('<p class="about_thanks_m_2">Thank you, we will be in touch shortly!</p><br><span id="spacer_m"></span>');
+	$('#payment-response').append('<%= escape_javascript(link_to 'See Confessions!', confessions_path, :id => "confess_submit_m")  %><br><span id="spacer_m"></span>');
 	new_payment.payment_text_field_m.value="";
   }
 
