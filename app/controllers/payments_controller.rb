@@ -1,5 +1,5 @@
 class PaymentsController < ApplicationController
- # before_filter :check_for_mobile
+  before_filter :check_for_mobile
   before_action :set_confession, only: [:show, :edit, :update, :destroy]
   respond_to :html, :js, :json
 

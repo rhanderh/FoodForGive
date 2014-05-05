@@ -36,6 +36,26 @@ font-family: 'Bubblegum Sans', cursive;
 	-ms-transform:rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
 }*/
+
+
+#head_m {
+    background:#FFFFFF;
+	color:#662D91;
+	font-family: 'Henny Penny', cursive;
+	width 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#head_m a {
+	text-decoration:none;
+	width:100%;
+	font-size:3em;
+	background:#FFFFFF;
+	color:#662D91;
+	padding-left: 2%;
+}
+
 .wrapper {
 	width:1024px;
 	margin:20px auto;

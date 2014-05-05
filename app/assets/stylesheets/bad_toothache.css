@@ -1,29 +1,22 @@
-.mast_m {
-	padding:0;	
-}
-.mast_inner_m {
-	margin:0 auto;
-	width:100%;
-}
-.mast_m form {
-	text-align:center;
-	margin:0 auto 30px;
-	height:570px;
-	display:block;
-	position:relative;
+.about_cherub_m
+{
+	height:192px;
+	width:141px;
+	right: 5%;
+	z-index: 200;
+	position:absolute;
+	background: "/assets/cherub2_lg.png";
 }
 
-.mast_m form input[type="text"] {
-	margin-top:150px;
-	text-align:center;
-	width: 90%;
-	font-family: 'Bubblegum Sans', cursive;
-	color:rgb(96, 57, 19);
+#mobile_form{
+
 }
+
+
 
 #confess_text_field_m, #payment_text_field_m {
 	z-index: 120;
-	font-size: 1.5em;
+	font-size: 1em;
 	border:1px solid #808285;
 	border-radius:5px;
 	padding:10px 0;
@@ -68,9 +61,8 @@
 	border: 1px solid #EE0000;
 	border-radius: 7px;
 	box-shadow: 4px 4px 2px #888888;
-    font-size: 1.5em;
-    width: 90%;
-    padding: 0.1.5em;
+    font-size: 0.8em;
+    padding: 0.2em;
 	cursor:pointer;
 }
 #pay_submit_m:hover {
@@ -92,8 +84,9 @@
 }
 
 #form_bg_m {
-	/*background:url('/assets/placeSetting2.png') no-repeat center;
-	background-size: contain;*/
+	text-align: center;
+	padding-top: 105px;
+	padding-bottom: 35px;
 }
 
 

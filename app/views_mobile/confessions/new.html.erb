@@ -1,20 +1,19 @@
 
-<div class="wrapper">
-<span class="face">
-	<span class="limiter">
-  
+	<img src="/assets/cherub2_lg.png" class="about_cherub_m">
 
-        <header>
-            <h1>
-            	<a href="http://www.foodforgive.com"><span><span>Food ForGive<sub>&trade;</sub></span></span></a>
-                <span class="end"></span>
-                <br class="clear" />
-			</h1>
-        </header>
-      
+<div id="head_m">
+	<a href="http://www.foodforgive.com">Food Forgive</a>
+</div>
 
-        <section class="mast_m">
-            <div class="mast_inner_m">
+
+<div id="outer_confessions" class="face">
+	
+		
+
+	
+        <div id="mobile_form">	
+        
+       
             	
 	    <%= form_for(@confession, remote: true, :html => {:id => "form_bg_m"}) do |f| %>
  	 	<% if @confession.errors.any? %>
@@ -33,7 +32,7 @@
 	   
 	 
 	     
-	     <div id="magic-response_m">
+	     <div id="magic-response">
 	     	
 
 	     	
@@ -50,12 +49,13 @@
          <div class="actions" id="submit_confession">
 	     <%= f.submit "Forgive Yourself", :id => "confess_submit_m" %>
 	     </div>
-	       
+	      
+	      
 	     </div>
 	    
 	     <br>
 	     
-	     <div id="magic-fail_m"></div> 
+	     <div id="magic-fail"></div> 
 	  
 	     	      	
 	     <!-- <div id="u3743_clip">
@@ -65,58 +65,38 @@
 	       <img class="position_content" id="u3743_img" src="/assets/pink%20button.png" alt="" width="80" height="21"/>	       
 	     </div>-->
                            
+
+     <% end %>
+     
+     </div>
+                    
+                    
                     <ul class="social">
             			<li><a href="http://www.facebook.com/foodforgive" title="Find Food ForGive on Facebook" class="facebook"><span>Facebook</span></a></li>
             			<li><a href="http://www.twitter.com/foodforgive" title="Follow ForGive on Twitter" class="twitter"><span>Twitter</span></a></li>
             			<li><a href="http://www.pinterest.com/foodforgive" title="Visit the Food ForGive Pinterest Board" class="pinterest"><span>Pinterest</span></a></li>
             			<li><a href="" title="Join the Food ForGive Google+ Circle" class="google"><span>Google+</span></a></li>
             		</ul>
-     <% end %>
-                    
-                    
+            		
 
-                
-                <br class="clear" />
-            </div>
-        </section>
-    </span><!-- /.limiter -->
-</span>
-<section class="info">
-    <span class="layer">
-
-                <span class="limiter doubleblock1">
-				<span class="TL">
-				<span class="TR">
-				<span class="BR">
-				<span class="BL">
-						<span class="textParent">
 						<h2><span>About</span>Food ForGive<sub>&trade;</sub></h2>
 							<p class="jist">Giving is part of ForGiving.</p>
 							<p>Food ForGive can forgive any kind of food transgressions, lapses in judgment, or moments of bacchanalian food insanity. Our Confession Cherubs<sub>&trade;</sub> lift your confessions to the Divine and offer encouragement so that you can declare, &quot;I'm moving on, mmm--kay.&quot;</p>
 							<p>In the near future, Food ForGive hopes to provide options for you to donate a few dollars to a local food bank. The ultimate, morale-boosting goal of Food ForGive is not only to provide food forgiveness, but also to provide food for give to people and kids in need. Can we get two snaps and a hey?</p>
 							<p>Thank you. Peace! And Love.</p>
 						
-						</span><!-- /.textParent -->
-				</span><!-- /.BL -->		
-				</span><!-- /.BR -->		
-				</span><!-- /.TR -->		
-				</span><!-- /.TL -->
-                </span><!-- /.limiter .doubleblock-->
+	
 
-    </span><!-- /.layer -->
 				<ul class="social">
 					<li><a href="http://www.facebook.com/foodforgive" title="Find Food ForGive on Facebook" class="facebook"><span>Facebook</span></a></li>
 					<li><a href="http://www.twitter.com/foodforgive" title="Follow ForGive on Twitter" class="twitter"><span>Twitter</span></a></li>
 					<li><a href="http://www.pinterest.com/foodforgive" title="Visit the Food ForGive Pinterest Board" class="pinterest"><span>Pinterest</span></a></li>
 					<li><a href="" title="Join the Food ForGive Google+ Circle" class="google"><span>Google+</span></a></li>
 				</ul>
-</section>
+
 
 <a name="email_form"></a>
-<section class="aux">
-	<div class="ornamentA"></div>
-	<span class="limiter doubleblock2">
-        <span class="textParent">
+
         	<h2><span>Contact</span>Food ForGive<sub>&trade;</sub></h2>
             <p class="jist">You are Super Fun <br>for scrolling all the way down here.</p>
             <p>Because giving is forgiving, Food ForGive hopes to partner with a food bank so that you can have the option of donating a few dollars after your confession. Let's keep in touch because we want you to help us celebrate when that happens &ndash; and no, we're not going to give away your private info because that's no fun at all. Two snaps and a hey. See you soon!</p>
@@ -129,19 +109,15 @@
 	</div>
 	</div>
 		
-        </span><!-- /.aux -->
-    </span><!-- /.limiter -->
+
 		<ul class="social">
             <li><a href="http://www.facebook.com/foodforgive" title="Find Food ForGive on Facebook" class="facebook"><span>Facebook</span></a></li>
             <li><a href="http://www.twitter.com/foodforgive" title="Follow ForGive on Twitter" class="twitter"><span>Twitter</span></a></li>
             <li><a href="http://www.pinterest.com/foodforgive" title="Visit the Food ForGive Pinterest Board" class="pinterest"><span>Pinterest</span></a></li>
             <li><a href="" title="Join the Food ForGive Google+ Circle" class="google"><span>Google+</span></a></li>
         </ul>
-		<div class="ornamentB"></div>
-		<div class="ornamentC"></div>
-		<div class="ornamentC"></div>
-</section>
 
+</div>
 
 <footer>
         

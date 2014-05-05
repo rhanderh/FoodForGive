@@ -1,11 +1,9 @@
 
 
 
-
-<div id="magic_response_inner_m">
-  <p id="Random_Answer_m">Random Answer</p>
-  <p><div id="tiny-response_m">(two snaps and a hey)</div>Peace! You’re forgiven.</p>
-  <div id="amount-response_m"><br><p>Giving is part of ForGiving.</p><p>Please donate $<span id="donate-amount">1</span> to a foodbank of your choice.</p>
+  <p id="Random_Answer"></p>
+  <p><div id="tiny-response">(two snaps and test a hey)</div>Peace! You’re forgiven.</p>
+  <div id="amount-response"><br><p>Giving is part of ForGiving.</p><p>Please donate $<span id="donate-amount"></span> to a foodbank of your choice.</p>
 
           
   </div>
@@ -32,7 +30,7 @@
     }
   });
 
-  document.getElementById('pay_submit').addEventListener('click', function(e) {
+  document.getElementById('pay_submit_m').addEventListener('click', function(e) {
     // Open Checkout with further options
     handler.open({
       name: 'Food ForGive',
@@ -41,12 +39,12 @@
     });
     e.preventDefault();
   });
+  
           </script>
 
 
 
  <% end %>
-</div>
 
 
 
