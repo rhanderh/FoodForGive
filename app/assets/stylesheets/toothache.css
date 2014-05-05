@@ -38,6 +38,21 @@ font-family: 'Bubblegum Sans', cursive;
 }*/
 
 
+#confess_submit_m {
+	position: relative;
+	color:#662D91;
+	background-color: #F5A2C9;
+	border: 1px solid #F5A2C9;
+	border-radius: 7px;
+	box-shadow: 4px 4px 2px #888888;
+    font-size: 1.5em;
+    padding: 0.1.5em;
+    width: 90%;
+}
+#confess_submit_m:hover {
+	color:#FFFFFF;
+}
+
 #head_m {
     background:#FFFFFF;
 	color:#662D91;
@@ -181,6 +196,7 @@ div#main_content {
 	font-family: 'Bubblegum Sans', cursive;
 	font-weight: 400;
 	color: #662D91;
+	padding-top: 10px;
 }
 #Random_Answer {
 	font-size: 28px;

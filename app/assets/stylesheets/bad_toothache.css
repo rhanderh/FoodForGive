@@ -9,6 +9,32 @@
 	background: "/assets/cherub2_lg.png";
 }
 
+.section_head_m{
+		font-size:1.5em !important;	
+		font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;	
+		text-decoration: underline;
+	    color:rgb(96, 57, 19);
+	    padding-bottom: 10px;
+
+}
+
+.about_body_m{
+	color:rgb(96, 57, 19);
+	line-height: 150%;
+	padding-bottom: 10px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;	
+
+}
+
+.m_section_bg{
+	background: #D2ACBF;
+	margin-top: 20px;
+
+}
+
+#spacer_m{
+	margin: 20px;
+}
 
 #confess_text_field_m, #payment_text_field_m {
 	z-index: 120;
@@ -37,20 +63,7 @@
 #donate_submit_m:hover {
 	color:#F5A2C9;
 }
-#confess_submit_m {
-	position: relative;
-	color:#662D91;
-	background-color: #F5A2C9;
-	border: 1px solid #F5A2C9;
-	border-radius: 7px;
-	box-shadow: 4px 4px 2px #888888;
-    font-size: 1.5em;
-    padding: 0.1.5em;
-    width: 90%;
-}
-#confess_submit_m:hover {
-	color:#FFFFFF;
-}
+
 #pay_submit_m {
 	color:#FFFFFF;
 	background-color: #EE0000;
@@ -82,7 +95,7 @@
 #form_bg_m {
 	text-align: center;
 	padding-top: 70px;
-	padding-bottom: 35px;
+	padding-bottom: 25px;
 }
 
 
