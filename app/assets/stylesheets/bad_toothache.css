@@ -1,0 +1,126 @@
+.mast_m {
+	padding:0;	
+}
+.mast_inner_m {
+	margin:0 auto;
+	width:100%;
+}
+.mast_m form {
+	text-align:center;
+	margin:0 auto 30px;
+	height:570px;
+	display:block;
+	position:relative;
+}
+
+.mast_m form input[type="text"] {
+	margin-top:150px;
+	text-align:center;
+	width: 90%;
+	font-family: 'Bubblegum Sans', cursive;
+	color:rgb(96, 57, 19);
+}
+
+#confess_text_field_m, #payment_text_field_m {
+	z-index: 120;
+	font-size: 1.5em;
+	border:1px solid #808285;
+	border-radius:5px;
+	padding:10px 0;
+	-webkit-box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
+	-moz-box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
+	box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
+	width:90%;
+	font-family: 'Bubblegum Sans',cursive;
+}
+#donate_submit_m {
+	background-color: #EE0000;
+	color:#FFFFFF;
+	position: relative;
+	color:#662D91;
+	border: 1px solid #EE0000;
+	border-radius: 7px;
+	box-shadow: 4px 4px 2px #888888;
+    font-size: 1.5em;
+    width: 90%;
+    padding: 0.1.5em;
+}
+#donate_submit_m:hover {
+	color:#F5A2C9;
+}
+#confess_submit_m {
+	position: relative;
+	color:#662D91;
+	background-color: #F5A2C9;
+	border: 1px solid #F5A2C9;
+	border-radius: 7px;
+	box-shadow: 4px 4px 2px #888888;
+    font-size: 1.5em;
+    padding: 0.1.5em;
+    width: 90%;
+}
+#confess_submit_m:hover {
+	color:#FFFFFF;
+}
+#pay_submit_m {
+	color:#FFFFFF;
+	background-color: #EE0000;
+	border: 1px solid #EE0000;
+	border-radius: 7px;
+	box-shadow: 4px 4px 2px #888888;
+    font-size: 1.5em;
+    width: 90% important!;
+    padding: 0.1.5em;
+	cursor:pointer;
+}
+#pay_submit_m:hover {
+	color:#FFFFFF;
+	background-color:#F5A2C9;
+}
+#payment-text_m {
+	background-color: transparent;
+	opacity: 0.85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+	filter: alpha(opacity=85);
+	text-align: center;
+	color: #662D91;
+	line-height: 23px;
+	font-size: 1.5em;
+    width: 90%;
+	font-family: 'Bubblegum Sans', cursive;
+	font-weight: 400;
+}
+
+#form_bg_m {
+	/*background:url('/assets/placeSetting2.png') no-repeat center;
+	background-size: contain;*/
+}
+
+
+
+#Random_Answer_m {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+#tiny-response_m {
+	font-size: 24px;
+	font-family: 'Bubblegum Sans', cursive;
+	font-weight: 400;
+}
+#amount-response_m {
+	font-size: 20px;
+	font-family: 'Linden Hill', serif;
+	color:rgb(96, 57, 19);
+	font-weight: 400;
+	margin:10px 0;
+}
+#magic_response_inner_m {
+	padding-top: 150px;
+
+}
+#magic-response_m {
+	font-size: 1.5em;
+	font-family: 'Bubblegum Sans', cursive;
+	color: #662D91;
+	font-weight: 400;
+}

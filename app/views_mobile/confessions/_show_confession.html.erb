@@ -1,0 +1,52 @@
+
+
+
+
+<div id="magic_response_inner_m">
+  <p id="Random_Answer_m">Random Answer</p>
+  <p><div id="tiny-response_m">(two snaps and a hey)</div>Peace! You’re forgiven.</p>
+  <div id="amount-response_m"><br><p>Giving is part of ForGiving.</p><p>Please donate $<span id="donate-amount">1</span> to a foodbank of your choice.</p>
+
+          
+  </div>
+
+  <br>
+  
+
+ <%= form_tag(charges_path, remote: true) do %>
+  
+  
+      <span id="pay_submit_m">Give to ForGive!</span>
+          
+
+ 	 <script>
+    var handler = StripeCheckout.configure({
+    key: "<%= Rails.configuration.stripe[:publishable_key] %>",
+    image: 'assets/cherub1.png',
+    token: function(token, args) {
+      // Use the token to create the charge with a server-side script.
+      var tokenInput = $("<input type=hidden name=stripeToken />").val(token.id);
+  	  var amountInput = $("<input type=hidden name=amount />").val($to_pay_amount);
+  	  var authenticityToken =$("<input type=hidden value=<%= form_authenticity_token() %> name=authenticity_token />")
+      $("form").append(tokenInput).append(amountInput).append(authenticityToken).trigger('submit.rails');
+    }
+  });
+
+  document.getElementById('pay_submit').addEventListener('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Food ForGive',
+      description: 'Donation to a local Foodbank',
+      amount: $to_pay_amount
+    });
+    e.preventDefault();
+  });
+          </script>
+
+
+
+ <% end %>
+</div>
+
+
+
