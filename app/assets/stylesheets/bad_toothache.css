@@ -1,3 +1,11 @@
+div#outer_confessions_m {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:25px;
+    position:relative;
+}
+
 .about_cherub_m
 {
 	height:120px;
@@ -91,6 +99,7 @@
 	text-decoration:none;
 	width:100%;
 	font-size:2.5em;
+	line-height: 125%;
 	background:#FFFFFF;
 	color:#662D91;
 	padding-left: 2%;
