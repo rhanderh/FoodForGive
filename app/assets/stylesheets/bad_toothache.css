@@ -1,18 +1,13 @@
 .about_cherub_m
 {
-	height:50px;
-	width:35px;
+	height:120px;
+	width:85px;
 	right: 2%;
-	top: 10%;
+	top: 7%;
 	z-index: 200;
 	position:absolute;
 	background: "/assets/cherub2_lg.png";
 }
-
-#mobile_form{
-
-}
-
 
 
 #confess_text_field_m, #payment_text_field_m {
@@ -86,7 +81,7 @@
 
 #form_bg_m {
 	text-align: center;
-	padding-top: 105px;
+	padding-top: 70px;
 	padding-bottom: 35px;
 }
 

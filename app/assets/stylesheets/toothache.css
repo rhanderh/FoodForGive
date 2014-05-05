@@ -50,10 +50,12 @@ font-family: 'Bubblegum Sans', cursive;
 #head_m a {
 	text-decoration:none;
 	width:100%;
-	font-size:3em;
+	font-size:2.5em;
 	background:#FFFFFF;
 	color:#662D91;
 	padding-left: 2%;
+	padding-top: 2%;
+	z-index: 10;
 }
 
 .wrapper {
