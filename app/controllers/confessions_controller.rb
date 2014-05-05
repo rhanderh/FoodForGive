@@ -1,5 +1,5 @@
 class ConfessionsController < ApplicationController
-  before_filter :check_for_mobile
+  before_action :check_for_mobile, only: [:new, :create]
   before_action :set_confession, only: [:show, :edit, :update, :destroy]
   before_action :check_if_ipayed, only: [:index]
   respond_to :html, :js, :json
@@ -16,6 +16,7 @@ class ConfessionsController < ApplicationController
 
   # GET /confessions/new
   def new
+    puts view_paths
     @confession = Confession.new
   end
 

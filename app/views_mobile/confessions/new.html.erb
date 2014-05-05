@@ -1,10 +1,22 @@
-<div id="outer_confessions">
-	  
-	  <div id="main_content">
-	  	
-	  <img src="/assets/purplecherub12-u2852.png" style="opacity: 1;">
-	  
-	    <%= form_for(@confession, remote: true) do |f| %>
+
+<div class="wrapper">
+<span class="face">
+	<span class="limiter">
+  
+
+        <header>
+            <h1>
+            	<a href="http://www.foodforgive.com"><span><span>Food ForGive<sub>&trade;</sub></span></span></a>
+                <span class="end"></span>
+                <br class="clear" />
+			</h1>
+        </header>
+      
+
+        <section class="mast_m">
+            <div class="mast_inner_m">
+            	
+	    <%= form_for(@confession, remote: true, :html => {:id => "form_bg_m"}) do |f| %>
  	 	<% if @confession.errors.any? %>
    	 	<div id="error_explanation">
       	<h2><%= pluralize(@confession.errors.count, "error") %> - Sorry!  This made the confession not record.  The Food ForGive team will be right on it, so come back soon!</h2>
@@ -16,12 +28,12 @@
      	 </ul>
     	</div>
   		<% end %>
-  		
+		
 	     
 	   
-
+	 
 	     
-	     <div id="magic-response">
+	     <div id="magic-response_m">
 	     	
 
 	     	
@@ -30,94 +42,168 @@
 	     <div id="confess_field" class="field"> <%= f.text_field :confession_text, 	     						
 
 	     						:value => "", 
-	     						:placeholder => "Please enter a food confession...",
-	     						:id => "confess_text_field"  %> </div>
+	     						:placeholder => "Please type your food confession here...",
+	     						:style => "text-align: Center",
+	     						:id => "confess_text_field_m"  %> </div>
 	     <br>
 
-         <div class="actions", id="submit_confession">
-	     <%= f.submit "Forgive Yourself", :id => "confess_submit" %>
+         <div class="actions" id="submit_confession">
+	     <%= f.submit "Forgive Yourself", :id => "confess_submit_m" %>
 	     </div>
 	       
 	     </div>
 	    
 	     <br>
-	     <div id="magic-fail"></div> 
 	     
-	
+	     <div id="magic-fail_m"></div> 
+	  
 	     	      	
-	 
+	     <!-- <div id="u3743_clip">
+	      <div class="actions" id="submit_confession">
+	           <%= f.submit "Forgive Yourself", :id => "confess_submit" %>
+	       </div>
+	       <img class="position_content" id="u3743_img" src="/assets/pink%20button.png" alt="" width="80" height="21"/>	       
+	     </div>-->
+                           
+                    <ul class="social">
+            			<li><a href="http://www.facebook.com/foodforgive" title="Find Food ForGive on Facebook" class="facebook"><span>Facebook</span></a></li>
+            			<li><a href="http://www.twitter.com/foodforgive" title="Follow ForGive on Twitter" class="twitter"><span>Twitter</span></a></li>
+            			<li><a href="http://www.pinterest.com/foodforgive" title="Visit the Food ForGive Pinterest Board" class="pinterest"><span>Pinterest</span></a></li>
+            			<li><a href="" title="Join the Food ForGive Google+ Circle" class="google"><span>Google+</span></a></li>
+            		</ul>
      <% end %>
+                    
+                    
 
+                
+                <br class="clear" />
+            </div>
+        </section>
+    </span><!-- /.limiter -->
+</span>
+<section class="info">
+    <span class="layer">
 
+                <span class="limiter doubleblock1">
+				<span class="TL">
+				<span class="TR">
+				<span class="BR">
+				<span class="BL">
+						<span class="textParent">
+						<h2><span>About</span>Food ForGive<sub>&trade;</sub></h2>
+							<p class="jist">Giving is part of ForGiving.</p>
+							<p>Food ForGive can forgive any kind of food transgressions, lapses in judgment, or moments of bacchanalian food insanity. Our Confession Cherubs<sub>&trade;</sub> lift your confessions to the Divine and offer encouragement so that you can declare, &quot;I'm moving on, mmm--kay.&quot;</p>
+							<p>In the near future, Food ForGive hopes to provide options for you to donate a few dollars to a local food bank. The ultimate, morale-boosting goal of Food ForGive is not only to provide food forgiveness, but also to provide food for give to people and kids in need. Can we get two snaps and a hey?</p>
+							<p>Thank you. Peace! And Love.</p>
+						
+						</span><!-- /.textParent -->
+				</span><!-- /.BL -->		
+				</span><!-- /.BR -->		
+				</span><!-- /.TR -->		
+				</span><!-- /.TL -->
+                </span><!-- /.limiter .doubleblock-->
 
-     	<p>Giving is part of ForGiving.</p><br>
-     	<p>Food ForGive can forgive any kind of food transgressions, lapses in judgment, or moments of bacchanalian food insanity. Our Confession Cherubs<span id="tm_span">TM</span> lift your confessions to the Divine who, in turn, offers encouragement so that you can declare,"I'm moving on -- mmmkay."
-        </p><br>
-        <p>In the near future, Food ForGive hopes to provide options for you to donate a few dollars to a local food bank. The ultimate, morale-boosting goal of Food ForGive is not only to provide food forgiveness, but also to provide food for give to people and hungry kids in need. Can we get two snaps and a hey?
-        </p><br>
-        <p>Thank you. Peace! And Love.</p>
-   
-   
-   
-   
-<p>You are Super Fun for scrolling all the way down here.</p>
+    </span><!-- /.layer -->
+				<ul class="social">
+					<li><a href="http://www.facebook.com/foodforgive" title="Find Food ForGive on Facebook" class="facebook"><span>Facebook</span></a></li>
+					<li><a href="http://www.twitter.com/foodforgive" title="Follow ForGive on Twitter" class="twitter"><span>Twitter</span></a></li>
+					<li><a href="http://www.pinterest.com/foodforgive" title="Visit the Food ForGive Pinterest Board" class="pinterest"><span>Pinterest</span></a></li>
+					<li><a href="" title="Join the Food ForGive Google+ Circle" class="google"><span>Google+</span></a></li>
+				</ul>
+</section>
 
-<p>Because giving is forgiving, Food ForGive hopes to partner with a food bank so that you can have the option of donating a few dollars after your confession. Let’s keep in touch because we want you to help us celebrate when that happens – and no, we’re not going to give away your private info because that’s no fun at all. Two snaps and a hey. See you soon!</p>
-   
+<a name="email_form"></a>
+<section class="aux">
+	<div class="ornamentA"></div>
+	<span class="limiter doubleblock2">
+        <span class="textParent">
+        	<h2><span>Contact</span>Food ForGive<sub>&trade;</sub></h2>
+            <p class="jist">You are Super Fun <br>for scrolling all the way down here.</p>
+            <p>Because giving is forgiving, Food ForGive hopes to partner with a food bank so that you can have the option of donating a few dollars after your confession. Let's keep in touch because we want you to help us celebrate when that happens &ndash; and no, we're not going to give away your private info because that's no fun at all. Two snaps and a hey. See you soon!</p>
+           
+               <%=render '/payments/form', :@payment => Payment.new %>
+<br>
 
-<%=render '/payments/form', :@payment => Payment.new %>
-
+<div id="payment-text">	
 <div id="payment-response">
 	</div>
-     
-     
-</div>
-</div>
+	</div>
+		
+        </span><!-- /.aux -->
+    </span><!-- /.limiter -->
+		<ul class="social">
+            <li><a href="http://www.facebook.com/foodforgive" title="Find Food ForGive on Facebook" class="facebook"><span>Facebook</span></a></li>
+            <li><a href="http://www.twitter.com/foodforgive" title="Follow ForGive on Twitter" class="twitter"><span>Twitter</span></a></li>
+            <li><a href="http://www.pinterest.com/foodforgive" title="Visit the Food ForGive Pinterest Board" class="pinterest"><span>Pinterest</span></a></li>
+            <li><a href="" title="Join the Food ForGive Google+ Circle" class="google"><span>Google+</span></a></li>
+        </ul>
+		<div class="ornamentB"></div>
+		<div class="ornamentC"></div>
+		<div class="ornamentC"></div>
+</section>
+
+
+<footer>
+        
+        
+        <%= link_to '<h3>RH&amp;RH</h3>' .html_safe, about_path %>
+        <div>
+            <h4>Trademarks</h4>
+            <p>Food Forgive are trademarks owned by RH&amp;RH. Such trademarks may not be used in connection with any products or services that are not controlled by RH&amp;RH, or in any manner that is likely to cause confusion among customers, or in any manner that disparages or discredits RH&amp;RH or FoodForGive.com.</p>
+        </div>
+        <div>
+            <h4>Liability Disclaimer</h4>
+            <p>RH&amp;RH makes no representations or warranties of any kind, express or implied, as to the operation of the site, the information, content, materials or products included on this site. RH&amp;RH will not be liable for any damages arising from use of this site. Ultimately, all readings and advice arising from use of this site are understood to be for entertainment purposes only.</p>
+			
+        </div>
+        <br class="clear" />
+	
+</footer>
+	<div class="ornamentD"></div>
+	<br class="clear" />
+</div><!-- /.wrapper -->
+<script>
+
+/*Cherub Animations*/
  
-<!-- Footer -->
-  
-<div id="footer_outer">
-	<div id="footer_inner">
-    <div class="clearfix colelem" id="pu3526_ft_row1"><!-- group -->
-    	<ul>
-     		<li><img class="grpelem" id="u3526_media_button" src="/assets/facebook-u3526.png" alt="" width="54" height="61"/></li>
-     		<li><img class="grpelem" id="u3524_media_button" src="/assets/twitter2-u3524.png" alt="" width="54" height="61"/></li>
-     		<li><img class="grpelem" id="u3522_media_button" src="/assets/pinterest-u3522.png" alt="" width="54" height="61"/></li>
-     		<li><img class="grpelem" id="u3528_media_button" src="/assets/google-logo-u3528.png" alt="" width="58" height="65"/></li>
-     		<li><img class="grpelem" id="u3518_media_button" src="/assets/youtube-u3518.png" alt="" width="54" height="61"/></li>
-     	</ul>
-    </div>
-    
-    <div id="pu3526_ft_row2">
-    <!-- image --><img src="/assets/r%20h%20-%20r%20h.png" id="rhrh_img" width="107" height="21"/>
-	  </div>
 
-   <div id="tm_text">
-      <p>TRADEMARKS</p>
-      <p>Food Forgive are trademarks owned by RH&amp;RH. Such trademarks may not be used in connection with any products or services that are not controlled by RH&amp;RH, or in any manner that is likely to cause confusion among customers, or in any manner that disparages or discredits RH&amp;RH or FoodForGive.com.</p>
+$(document).ready(function(){
+    var boxpos = 40;
+    var last_scroll = 0;
+    $("#cherub1").css("left", boxpos);
+    $("#cherub2").css("right", boxpos);
 
-     
-      <br>
-      
-      <p >LIABILITY DISCLAIMER</p>
-      <p ><span>RH&amp;RH makes no representations or warranties of any kind, express or implied, as to the operation of the site, the information, content, materials or products included on this site. RH&amp;RH will not be liable for any damages arising from use of this site. Ultimately, all readings and advice arising from use of this site are understood to be for entertainment purposes only.</span></p>
- 
-    </div>
+    $(window).scroll(function(){
+    	//Set the current scroll position
+        var pos = $(document).scrollTop();
+        if(pos > last_scroll){
+        	//We are scrolling down!
+            boxpos = boxpos-2;
+            $("#cherub1").css("left", boxpos);
+            $("#cherub2").css("right", boxpos);
+           }
+         else
+         {
+        	//We are going up!
+        	boxpos = boxpos+2;
+            $("#cherub1").css("left", boxpos);
+            $("#cherub2").css("right", boxpos);
+         }
+      //Update the scroll position
+      last_scroll = pos;
 
-   </div>
-  </div>
-  
-    <!-- JS includes -->
-  <script type="text/javascript">
-   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+    });
+});
+
 </script>
-  <script type="text/javascript">
-   window.jQuery || document.write('\x3Cscript src="/assets/scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
-</script>
-  <script src="/assets/scripts/museutils.js?117816282" type="text/javascript"></script>
-  <script src="/assets/scripts/jquery.scrolleffects.js?3963828924" type="text/javascript"></script>
-  <script src="/assets/scripts/jquery.watch.js?4199601726" type="text/javascript"></script>
-  
-  
+
+
+
+
+
+
+
+
+
 
 
