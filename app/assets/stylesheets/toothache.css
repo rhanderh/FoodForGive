@@ -412,25 +412,27 @@ li {
 	font-family: 'Bubblegum Sans', cursive;
 	color:rgb(96, 57, 19);
 }
+
 form input[type="submit"] {
 	clear:both;
 	padding:5px 10px;
 	color:#662D91;
 	background:#F5A2C9;
-	border-radius:5px;
+	/*border-radius:5px;
 	font-size:.8rem;
 	text-align:center;
 	display:block;
-	border:none;
+	border:none;*/
 	margin:10px auto 0;
 	cursor:pointer;
-	box-shadow:5px 5px 5px rgba(0,0,0,.5);
-	border:1px solid #CCC;
+	/*box-shadow:5px 5px 5px rgba(0,0,0,.5);
+	border:1px solid #CCC;*/
 	font-family: 'Bubblegum Sans', cursive;
 }
 form input[type="submit"]:hover {
 	color:#FFF;
 }
+
 .layer {
 	display:block;
 	width:100%;

@@ -158,6 +158,7 @@ div#outer_confessions_m {
     font-size: 1.5em;
     padding: 0.1.5em;
     width: 65%;
+    cursor: pointer;
 }
 
 
@@ -197,6 +198,7 @@ div#outer_confessions_m {
 	-moz-box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
 	box-shadow: inset 10px 13px 13px -6px rgba(212,213,215,1);
 	width:90%;
+	color:rgb(96, 57, 19);
 	font-family: 'Bubblegum Sans',cursive;
 }
 #donate_submit_m {
@@ -242,7 +244,6 @@ div#outer_confessions_m {
 	padding-top: 70px;
 	padding-bottom: 25px;
 }
-
 
 
 #Random_Answer_m {
